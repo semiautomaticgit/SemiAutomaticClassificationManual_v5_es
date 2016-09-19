@@ -1,1 +1,2 @@
-# SemiAutomaticClassificationManual_v5_es
+SemiAutomaticClassificationManual_v4
+====================================
