@@ -1,0 +1,99 @@
+# Translators:
+# Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-18 22:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016\n"
+"Language-Team: Spanish (https://www.transifex.com/semi-automatic-classification/teams/53374/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../toolbar_tools.rst:5
+msgid "SCP Tools"
+msgstr "SCP Herramientas"
+
+#: ../../toolbar_tools.rst:50
+msgid ":guilabel:`SCP Tools`"
+msgstr ":guilabel:`SCP Herramientas`"
+
+#: ../../toolbar_tools.rst:52
+msgid ""
+"The toolbar :guilabel:`SCP Tools` allows for the selection of the main "
+"functions of the :ref:`main_interface_window`, the "
+":ref:`spectral_signature_plot`, and the :ref:`scatter_plot`."
+msgstr ""
+"La barra de herramientas :guilabel:`SCP Herramientas` permite elegir las "
+"funciones principales de la :ref:`main_interface_window`, el "
+":ref:`spectral_signature_plot`, y el :ref:`scatter_plot`."
+
+#: ../../toolbar_tools.rst:54
+msgid "|band_set| :ref:`band_set_tab`;"
+msgstr "|band_set| :ref:`band_set_tab`;"
+
+#: ../../toolbar_tools.rst:55
+msgid "|download| :ref:`download_tab`;"
+msgstr "|download| :ref:`download_tab`;"
+
+#: ../../toolbar_tools.rst:56
+msgid "|tools| :ref:`tools_tab`;"
+msgstr "|tools| :ref:`tools_tab`;"
+
+#: ../../toolbar_tools.rst:57
+msgid "|preprocessing| :ref:`pre_processing_tab`;"
+msgstr "|preprocessing| :ref:`pre_processing_tab`;"
+
+#: ../../toolbar_tools.rst:58
+msgid "|postprocessing| :ref:`post_processing_tab`;"
+msgstr "|postprocessing| :ref:`post_processing_tab`;"
+
+#: ../../toolbar_tools.rst:59
+msgid "|bandcalc| :ref:`band_calc_tab`;"
+msgstr "|bandcalc| :ref:`band_calc_tab`;"
+
+#: ../../toolbar_tools.rst:60
+msgid "|sign_plot| :ref:`spectral_signature_plot`;"
+msgstr "|sign_plot| :ref:`spectral_signature_plot`;"
+
+#: ../../toolbar_tools.rst:61
+msgid "|scatter_plot| :ref:`scatter_plot`;"
+msgstr "|scatter_plot| :ref:`scatter_plot`;"
+
+#: ../../toolbar_tools.rst:62
+msgid "|batch_tool| :ref:`batch_tab`;"
+msgstr "|batch_tool| :ref:`batch_tab`;"
+
+#: ../../toolbar_tools.rst:63
+msgid "|settings| :ref:`settings_tab`;"
+msgstr "|settings| :ref:`settings_tab`;"
+
+#: ../../toolbar_tools.rst:64
+msgid ""
+"|guide| :guilabel:`User manual`: open the online user manual in a web "
+"browser;"
+msgstr ""
+"|guide| :guilabel:`Manual del Usuario`: abre el manual del usuario en línea "
+"en un navegador web;"
+
+#: ../../toolbar_tools.rst:65
+msgid ""
+"|help| :guilabel:`Online help`: open the `Online help "
+"<http://fromgistors.blogspot.com/p/online-help.html>`_ in a web browser; "
+"also, a `Facebook group "
+"<https://www.facebook.com/groups/SemiAutomaticClassificationPlugin/>`_ and a"
+" `Google+ Community "
+"<https://plus.google.com/communities/107833394986612468374>`_ are available "
+"for sharing information and asking for help about SCP;"
+msgstr ""
+"|help| :guilabel:`Ayuda en línea`: abre la `Ayuda en línea "
+"<http://fromgistors.blogspot.com/p/online-help.html>`_ en un navegador web; "
+"además, el `grupo en Facebook "
+"<https://www.facebook.com/groups/SemiAutomaticClassificationPlugin/>`_ y la "
+"`Comunidad Google+ "
+"<https://plus.google.com/communities/107833394986612468374>`_ están "
+"disponibles para compartir información y solicitar ayuda acerca de SCP;"

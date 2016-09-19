@@ -1,0 +1,34 @@
+# Translators:
+# Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-18 22:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016\n"
+"Language-Team: Spanish (https://www.transifex.com/semi-automatic-classification/teams/53374/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../installation.rst:5
+msgid "Plugin Installation"
+msgstr "Instalación del Complemento"
+
+#: ../../installation.rst:11
+msgid ""
+"The Semi-Automatic Classification Plugin requires the installation of `GDAL,"
+" OGR <http://www.gdal.org/>`_, `NumPy <http://www.numpy.org/>`_, `SciPy "
+"<http://www.scipy.org/>`_ and `Matplotlib <http://matplotlib.org/>`_ "
+"(already bundled with QGIS). |br| This chapter describes the installation of"
+" the Semi-Automatic Classification Plugin for the supported Operating "
+"Systems."
+msgstr ""
+"El Semi-Automatic Classification Plugin requiere la instalación de `GDAL, "
+"OGR <http://www.gdal.org/>`_, `NumPy <http://www.numpy.org/>`_, `SciPy "
+"<http://www.scipy.org/>`_ y `Matplotlib <http://matplotlib.org/>`_ (incluido"
+" con QGIS). |br| Este capítulo describe la instalación de Semi-Automatic "
+"Classification Plugin para los sistemas Operativos soportados."

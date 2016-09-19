@@ -1,0 +1,532 @@
+# Translators:
+# Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016
+# David López <535817@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-18 22:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: David López <535817@gmail.com>, 2016\n"
+"Language-Team: Spanish (https://www.transifex.com/semi-automatic-classification/teams/53374/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../tutorial_1.rst:5
+msgid "Tutorial 1"
+msgstr "Tutorial 1"
+
+#: ../../tutorial_1.rst:212
+msgid ""
+"The following is very basic tutorials for land cover classification using "
+"the Semi-Automatic Classification Plugin (:guilabel:`SCP`). It is assumed "
+"that you have a basic knowledge of QGIS."
+msgstr ""
+"El siguiente es un tutorial básico para la clasificación de la cobertura del"
+" suelo usando Semi-Automatic Classification Plugin (:guilabel:`SCP`). Se "
+"asume que tienes conocimientos básicos de QGIS."
+
+#: ../../tutorial_1.rst:223
+msgid "Tutorial 1: Your First Land Cover Classification"
+msgstr "Tutorial 1: Tu primera Clasificación de la Cobertura Terrestre"
+
+#: ../../tutorial_1.rst:225
+msgid ""
+"This is a basic tutorial about the use of :guilabel:`SCP` for the "
+"classification of a multi-spectral image. It is recommended to read the "
+":ref:`remote_sensing` before this tutorial."
+msgstr ""
+"Este es un tutorial básico sobre el uso de :guilabel:`SCP` para la "
+"clasificación de una imagen multi-espectral. Se recomienda leer el "
+":ref:`remote_sensing` antes de empezar con este tutorial."
+
+#: ../../tutorial_1.rst:228
+msgid ""
+"The purpose of the classification is to identify the following land cover "
+"classes:"
+msgstr ""
+"El propósito de la clasificación es identificar las siguientes clases de "
+"cobertura del suelo:"
+
+#: ../../tutorial_1.rst:230
+msgid "Water;"
+msgstr "Agua;"
+
+#: ../../tutorial_1.rst:231
+msgid "Built-up;"
+msgstr "Construcciones;"
+
+#: ../../tutorial_1.rst:232
+msgid "Vegetation;"
+msgstr "Vegetación;"
+
+#: ../../tutorial_1.rst:233
+msgid "Bare soil."
+msgstr "Suelo."
+
+#: ../../tutorial_1.rst:235
+msgid "Following the video of this tutorial."
+msgstr "Mira el vídeo de este tutorial."
+
+#: ../../tutorial_1.rst:241
+msgid "http://www.youtube.com/watch?v=GFrDgQ6Nzqs"
+msgstr "http://www.youtube.com/watch?v=GFrDgQ6Nzqs"
+
+#: ../../tutorial_1.rst:246
+msgid "Data"
+msgstr "Datos"
+
+#: ../../tutorial_1.rst:248
+msgid ""
+"**Download the image** from `this archive "
+"<https://docs.google.com/uc?id=0BysUrKXWIDwBNEtudThrcWlERDg>`_ (data "
+"available from the U.S. Geological Survey) and **unzip** the downloaded "
+"file."
+msgstr ""
+"**Descarga la imagen** desde `este archivo "
+"<https://docs.google.com/uc?id=0BysUrKXWIDwBNEtudThrcWlERDg>`_ (datos "
+"disponibles en la U.S. Geological Survey) y **descomprime** el archivo "
+"descargado."
+
+#: ../../tutorial_1.rst:250
+msgid ""
+"The downloaded file is actually a :ref:`Landsat_definition` image (pan-"
+"sharpened) including the following bands:"
+msgstr ""
+"El archivo descargado es actualmente una :ref:`Landsat_definition` imagen "
+"(pan-sharpened), que incluye las siguientes bandas:"
+
+#: ../../tutorial_1.rst:252
+msgid "Blue;"
+msgstr "Azul;"
+
+#: ../../tutorial_1.rst:253
+msgid "Green;"
+msgstr "Verde;"
+
+#: ../../tutorial_1.rst:254
+msgid "Red;"
+msgstr "Rojo;"
+
+#: ../../tutorial_1.rst:255
+msgid "Near-Infrared;"
+msgstr "Infrarojo-Cercano;"
+
+#: ../../tutorial_1.rst:256
+msgid "Short Wavelength Infrared 1;"
+msgstr ""
+
+#: ../../tutorial_1.rst:257
+msgid "Short Wavelength Infrared 2."
+msgstr ""
+
+#: ../../tutorial_1.rst:259
+msgid ""
+"In this tutorial we pretend this dataset is a generic multi-spectral raster "
+"in order to focus on the classification process (in the next tutorial we are"
+" going to use an image whose bands are single rasters)."
+msgstr ""
+"En este tutorial pretendemos centrarnos en el proceso de clasificación "
+"usando este conjunto de datos de una trama multiespectral genérica ( en el "
+"siguiente tutorial vamos a utilizar una imagen raster cuyas bandas son "
+"individuales) ."
+
+#: ../../tutorial_1.rst:264
+msgid "Set the Input Image in SCP"
+msgstr "Ajuste de la imagen original en el SCP"
+
+#: ../../tutorial_1.rst:266
+msgid ""
+"Start QGIS. In the :ref:`SCP_input` click the button |open_file| of the "
+":ref:`input_image`, in order to select the file ``sample_image.tif``. Once "
+"selected, ``sample_image.tif`` is set as :guilabel:`Input image`, the image "
+"is displayed in the map and bands are loaded in the :ref:`band_set_tab`."
+msgstr ""
+"Inicia QGIS. En el :ref:`SCP_input` pulsa sobre el botón |open_file| de la "
+":ref:`input_image`, para seleccionar el archivo ``sample_image.tif``. Una "
+"vez seleccionada, ``sample_image.tif`` se establece como :guilabel:`Input "
+"image`, la imagen se muestra en el mapa y las bandas son cargadas en el "
+":ref:`band_set_tab`."
+
+#: ../../tutorial_1.rst:270
+msgid ""
+"We can display a :ref:`color_composite_definition` of bands: Near-Infrared, "
+"Red, and Green: in the :ref:`working_toolbar`, click the list "
+":guilabel:`RGB=` and select the item ``4-3-2`` (corresponding to the band "
+"numbers in :ref:`band_set_tab`). You can see that image colors in the map "
+"change according to the selected bands, and vegetation is highlighted in red"
+" (if the item ``3-2-1`` was selected, natural colors would be displayed)."
+msgstr ""
+"Podemos mostrar una :ref:`color_composite_definition` de las bandas: "
+"Infrarojo-cercano, Rojo, y Verde: en la :ref:`working_toolbar`, clic sobre "
+"el listado :guilabel:`RGB=` y selecciona el elemento ``4-3-2`` "
+"(correspondiente al numero de banda en :ref:`band_set_tab`). Puedes ver que "
+"los colores de la imagen cambian en el mapa según las bandas seleccionadas, "
+"y la vegetación es resaltada en rojo (si la opción ``3-2-1`` fue "
+"seleccionada, se muestran los colores naturales)."
+
+#: ../../tutorial_1.rst:276
+msgid ":guilabel:`Color composite RGB=4-3-2`"
+msgstr ":guilabel:`Composición de color RGB=4-3-2`"
+
+#: ../../tutorial_1.rst:281
+msgid "Create the Training Input File"
+msgstr "Crear archivo de entrenamiento"
+
+#: ../../tutorial_1.rst:283
+msgid ""
+"Now we need to create the :ref:`training_input` in order to collect "
+":ref:`ROI_definition` (ROIs) and calculate the "
+":ref:`spectral_signature_definition` thereof (which are used in "
+"classification)."
+msgstr ""
+"Ahora necesitamos crear el :ref:`training_input` para recoger "
+":ref:`ROI_definition` (ROIs) y por tanto calcular el "
+":ref:`spectral_signature_definition` (los cuales son usados en la "
+"clasificación)."
+
+#: ../../tutorial_1.rst:285
+msgid ""
+"In the :ref:`SCP_dock` click the button |new_file| and define a name (e.g. "
+"``training.scp`` ) in order to create the :guilabel:`Training input`. The "
+"path of the file is displayed in :guilabel:`Training input`. A vector is "
+"added to QGIS layers with the same name as the ``Training input`` (in order "
+"to prevent data loss, you should not edit this layer using QGIS functions)."
+msgstr ""
+
+#: ../../tutorial_1.rst:292
+msgid ":guilabel:`Definition of Training input in SCP`"
+msgstr ":guilabel:`Definición del Entrenamiento de Entrada en SCP`"
+
+#: ../../tutorial_1.rst:297
+msgid "Create the ROIs"
+msgstr "Crear los ROIs"
+
+#: ../../tutorial_1.rst:299
+msgid ""
+"We are going to create ROIs defining the :ref:`classes_definition`. Each ROI"
+" identifies a land cover class through a Class ID. The Class ID codes used "
+"in this tutorial are illustrated in the following table (for now we assign "
+"the same code to Class ID and Macroclass ID)."
+msgstr ""
+"Vamos a crear ROIs definiendo el :ref:`classes_definition`. Cada ROI "
+"identifica una clase a través de la identificación única de esa clase. Los "
+"códigos de identificación única  usados en este tutorial se ilustran en la "
+"siguiente tabla (por ahora asignaremos el mismo código a la clase única y a "
+"la macroclase única)."
+
+#: ../../tutorial_1.rst:303
+msgid ":guilabel:`Macroclasses`"
+msgstr ":guilabel:`Macroclases`"
+
+#: ../../tutorial_1.rst:306
+msgid "Class name"
+msgstr "Nombre de clase"
+
+#: ../../tutorial_1.rst:306
+msgid "Class ID"
+msgstr "Clase ID"
+
+#: ../../tutorial_1.rst:308
+msgid "Water"
+msgstr "Agua"
+
+#: ../../tutorial_1.rst:308
+msgid "1"
+msgstr "1"
+
+#: ../../tutorial_1.rst:310
+msgid "Built-up"
+msgstr "Construcciones"
+
+#: ../../tutorial_1.rst:310
+msgid "2"
+msgstr "2"
+
+#: ../../tutorial_1.rst:312
+msgid "Vegetation"
+msgstr "Vegetación"
+
+#: ../../tutorial_1.rst:312
+msgid "3"
+msgstr "3"
+
+#: ../../tutorial_1.rst:314
+msgid "Bare soil"
+msgstr "Suelo"
+
+#: ../../tutorial_1.rst:314
+msgid "4"
+msgstr "4"
+
+#: ../../tutorial_1.rst:317
+msgid ""
+"ROIs can be created by manually drawing a polygon or with an automatic "
+"region growing algorithm."
+msgstr ""
+"Los ROIs pueden ser creados, dibujando a mano un polígono o con un algoritmo"
+" automático de región de cultivo."
+
+#: ../../tutorial_1.rst:319
+msgid ""
+"Zoom in the map over the dark area (it is a lake) in the lower right region "
+"of the image. In order to create manually a ROI inside the dark area, click "
+"the button |manual_ROI| in the :ref:`working_toolbar` (you can ignore a "
+"message about wavelength unit not provided). Left click on the map to define"
+" the ROI vertices and right click to define the last vertex closing the "
+"polygon. An orange semi-transparent polygon is displayed over the image, "
+"which is a temporary polygon (i.e. it is not saved in the "
+":guilabel:`Training input`)."
+msgstr ""
+"Amplia el mapa sobre la region oscura (se trata de un lago) en la region "
+"inferior izquierda de la imagen. Para crear una ROI dentro de la region "
+"oscura, pulsa sobre el botón |manual_ROI| en la :ref:`working_toolbar` "
+"(puedes ignorar el mensaje sobre unidades de longitud de onda no "
+"proporcionadas). Pulsa botón izquierdo sobre el mapa para definir los "
+"vertices de la ROI , y boton derecho para definir el ultimo vertice con el "
+"que se cierra el poligono. Un poligono naranja semitransparente se mostrará "
+"sobre la imagen, se trata de un poligono temporal (i.e. este no se guarda en"
+" la :guilabel:`Training input`)."
+
+#: ../../tutorial_1.rst:324
+msgid ""
+"**TIP** : You can draw temporary polygons (the previous one will be "
+"overridden) until the shape covers the intended area."
+msgstr ""
+"**CONSEJO** : Puedes dibujar polígonos temporales (los anteriores serán "
+"anulado) hasta que la forma cubra la zona prevista."
+
+#: ../../tutorial_1.rst:329
+msgid ":guilabel:`A temporary ROI created manually`"
+msgstr ""
+
+#: ../../tutorial_1.rst:331
+msgid ""
+"If the shape of the temporary polygon is good we can save it to the "
+":guilabel:`Training input`."
+msgstr ""
+
+#: ../../tutorial_1.rst:333
+msgid ""
+"Open the :ref:`classification_dock` to define the :ref:`classes_definition` "
+". In the :ref:`ROI_creation` set :guilabel:`MC ID` = 1 and :guilabel:`MC "
+"Info` = ``Water``; also set :guilabel:`C ID` = 1 and :guilabel:`C Info` = "
+"``Lake``. Now click |save_roi| to save the ROI in the :guilabel:`Training "
+"input`."
+msgstr ""
+
+#: ../../tutorial_1.rst:337
+msgid ""
+"After a few seconds, the ROI is listed in the :ref:`ROI_list` and the "
+"spectral signature is calculated (because |checkbox| :guilabel:`Calculate "
+"sig.` was checked)."
+msgstr ""
+"Tras unos pocos segundos, la ROI se muestra en la :ref:`ROI_list` y la firma"
+" espectral se ha calculado (por que |checkbox| :guilabel:`Calculate sig.` ha"
+" sido comprobada)."
+
+#: ../../tutorial_1.rst:342 ../../tutorial_1.rst:367
+msgid ":guilabel:`The ROI saved in the Training input`"
+msgstr ""
+
+#: ../../tutorial_1.rst:344
+msgid ""
+"As you can see, the :guilabel:`C ID` in :ref:`ROI_creation` is automatically"
+" increased by 1. Saved ROI is displayed as a dark polygon in the map and the"
+" temporary ROI is removed. Also, in the :ref:`ROI_list` you can notice that "
+"the :guilabel:`Type` is :guilabel:`B`, meaning that the ROI spectral "
+"signature was calculated and saved in the :guilabel:`Training input`."
+msgstr ""
+
+#: ../../tutorial_1.rst:348
+msgid ""
+"Now we are going to create a second ROI for the built-up class using the "
+"automatic region growing algorithm. Zoom in the map over the blue area in "
+"the upper left region of the image."
+msgstr ""
+"Ahora vamos a crear una segunda ROI para la clase urbanizada usando el "
+"algoritmo automático. Amplia el mapa sobre la zona azul en la región "
+"superior de la imagen."
+
+#: ../../tutorial_1.rst:351
+msgid ""
+"In :ref:`working_toolbar` set the :guilabel:`Dist` value to 0.08 . Click the"
+" button |roi_single| in the :ref:`working_toolbar` and click over the blue "
+"area of the map. After a while the orange semi-transparent polygon is "
+"displayed over the image."
+msgstr ""
+
+#: ../../tutorial_1.rst:355
+msgid ""
+"**TIP** : :guilabel:`Dist` value should be set according to the range of "
+"pixel values; in general, increasing this value creates larger ROIs."
+msgstr ""
+
+#: ../../tutorial_1.rst:360
+msgid ""
+":guilabel:`A temporary ROI created with the automatic region growing "
+"algorithm`"
+msgstr ""
+
+#: ../../tutorial_1.rst:362
+msgid ""
+"In the :ref:`ROI_creation` set :guilabel:`MC ID` = 2 and :guilabel:`MC Info`"
+" = ``Built-up`` ; also set :guilabel:`C ID` = 2 (it should be already set) "
+"and :guilabel:`C Info` = ``Buildings``."
+msgstr ""
+
+#: ../../tutorial_1.rst:369
+msgid ""
+"Again, the :guilabel:`C ID` in :ref:`ROI_creation` is automatically "
+"increased by 1."
+msgstr ""
+
+#: ../../tutorial_1.rst:371
+msgid ""
+"Create a ROI for the class ``Vegetation`` (red pixels in color composite "
+"``RGB=4-3-2``) and a ROI for the class ``Bare soil`` (green pixels in color "
+"composite ``RGB=4-3-2``) following the same steps described previously. The "
+"following images show a few examples of these classes identified in the map."
+msgstr ""
+
+#: ../../tutorial_1.rst:377
+msgid ":guilabel:`Vegetation`"
+msgstr ""
+
+#: ../../tutorial_1.rst:382
+msgid ":guilabel:`Bare soil`"
+msgstr ""
+
+#: ../../tutorial_1.rst:387
+msgid "Create a Classification Preview"
+msgstr "Crear Vista Previa de la Clasificación"
+
+#: ../../tutorial_1.rst:389
+msgid ""
+"The classification process is based on collected ROIs (and spectral "
+"signatures thereof). It is useful to create a :ref:`classification_preview` "
+"in order to assess the results (influenced by spectral signatures) before "
+"the final classification. In case the results are not good, we can collect "
+"more ROIs to better classify land cover."
+msgstr ""
+
+#: ../../tutorial_1.rst:393
+msgid ""
+"Before running a classification (or a preview), set the color of land cover "
+"classes that will be displayed in the classification raster. In the "
+":ref:`ROI_list`, double click the color (in the column :guilabel:`Color`) of"
+" each ROI to choose a representative color of each class."
+msgstr ""
+
+#: ../../tutorial_1.rst:399
+msgid ":guilabel:`Definition of class colors`"
+msgstr ""
+
+#: ../../tutorial_1.rst:401
+msgid ""
+"Now we need to select the classification algorithm. In this tutorial we are "
+"going to select the :ref:`spectra_angle_mapping_algorithm`."
+msgstr ""
+
+#: ../../tutorial_1.rst:404
+msgid ""
+"In :ref:`classification_alg` select the :guilabel:`Spectral Angle Mapping` "
+":ref:`classification_algorithm`. In :ref:`classification_preview` set "
+":guilabel:`Size` = 500; click the button |preview| and then left click a "
+"point of the image in the map. The classification process should be rapid, "
+"and the result is a classified square centered in clicked point."
+msgstr ""
+
+#: ../../tutorial_1.rst:411
+msgid ":guilabel:`Classification preview displayed over the image`"
+msgstr ""
+
+#: ../../tutorial_1.rst:413
+msgid ""
+"Previews are temporary rasters (deleted after QGIS is closed) placed in a "
+"group named :guilabel:`Class_temp_group` in the QGIS panel Layers."
+msgstr ""
+
+#: ../../tutorial_1.rst:415
+msgid ""
+"**TIP** : When loading a previously saved QGIS project, a message could ask "
+"to handle missing layers, which are temporary layers that SCP creates during"
+" each session and are deleted afterwards; you can click :guilabel:`Cancel` "
+"and ignore these layers."
+msgstr ""
+"**CONSEJO**: Al cargar un proyecto de QGIS guardado anteriormente, un "
+"mensaje podría pedir encargarse de las capas que faltan, que son capas "
+"temporales que crea SCP durante cada sesión y se eliminan después; puede "
+"hacer clic en :guilabel:`Cancel` e ignorar estas capas."
+
+#: ../../tutorial_1.rst:417
+msgid ""
+"In general, it is good to perform a classification preview every time a ROI "
+"(or a spectral signature) is added to the :ref:`ROI_list`. Therefore, the "
+"phases :ref:`tutorial_1_3` and :ref:`tutorial_1_4` should be iterative and "
+"concurrent processes."
+msgstr ""
+"En general, es bueno realizar una vista previa de la clasificación cada vez "
+"que se añade un ROI (o una firma espectral) a la :ref:`ROI_list`. Por lo "
+"tanto, las fases :ref:`tutorial_1_3` y :ref:`tutorial_1_4` deben ser "
+"procesos iterativos y concurrentes."
+
+#: ../../tutorial_1.rst:422
+msgid "Create the Classification Output"
+msgstr "Creación del resultado de la clasificación"
+
+#: ../../tutorial_1.rst:424
+msgid ""
+"Assuming that the results of classification previews were good (i.e. pixels "
+"are assigned to the correct class defined in the :ref:`ROI_list`), we can "
+"perform the actual land cover classification of the whole image."
+msgstr ""
+"Asumiendo que el resultado de la clasificación fuese bueno (por ejemplo, "
+"pixels asignados correctamente a su clase definida en el :ref:`ROI_list`), "
+"podemos realizar la clasificación de coberturas real de toda la imagen."
+
+#: ../../tutorial_1.rst:426
+msgid ""
+"In the :ref:`classification_output` click the button |run| and define the "
+"path of the classification output, which is a raster file (.tif). If "
+"|checkbox| :guilabel:`Play sound when finished` is checked in "
+":ref:`classification_process` settings, a sound is played when the process "
+"is finished."
+msgstr ""
+
+#: ../../tutorial_1.rst:432
+msgid ":guilabel:`Result of the land cover classification`"
+msgstr ""
+
+#: ../../tutorial_1.rst:434
+msgid ""
+"**Well done!** You have just performed your first land cover classification."
+msgstr ""
+"**Bien echo!** Acabas de terminar tu primera clasificación de terreno."
+
+#: ../../tutorial_1.rst:437
+msgid ""
+"Water and vegetation are correctly identified. However, you can see that "
+"there are several classification errors (especially soil classified as "
+"built-up and vice versa), because the number of ROIs (spectral signatures) "
+"is insufficient."
+msgstr ""
+"Agua y vegetación son correctamente identificadas. A pesar de ello puedes "
+"ver que hay varios errores de clasificación (en especial suelos clasificados"
+" como urbanizados y viceversa), debido a que el numero de ROIs (firmas "
+"espectrales) es insuficiente. "
+
+#: ../../tutorial_1.rst:443
+msgid ":guilabel:`Example of error: Bare soil classified as Built-up`"
+msgstr ""
+
+#: ../../tutorial_1.rst:445
+msgid ""
+"We can improve the classification using some of the tools described in the "
+"next tutorial."
+msgstr ""
+"Podemos mejorar la clasificación usando alguna de las herramientas descritas"
+" en el próximo tutorial."
