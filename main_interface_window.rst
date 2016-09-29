@@ -1625,6 +1625,11 @@ Index calculation
 * :guilabel:`Index calculation` |input_list|: list of spectral indices:
 	* :guilabel:`NDVI`: if selected, the NDVI calculation is entered in the :guilabel:`Expression` ( ``(( "#NIR#" - "#RED#") / ( "#NIR#" + "#RED#") @ NDVI)`` );
 	* :guilabel:`EVI`: if selected, the EVI calculation is entered in the :guilabel:`Expression` ( ``2.5 * ( "#NIR#" - "#RED#" ) / ( "#NIR#" + 6 * "#RED#" - 7.5 * "#BLUE#" + 1) @ EVI`` );
+* |open_file|: open a text file (.txt) containing custom expressions to be listed in :guilabel:`Index calculation`; the text file must contain an expression for each line; each line must be in the form ``expression_name; expression`` (separated by ``;``) where the ``expression_name`` is the expression name that is displayed in the :guilabel:`Index calculation`; if you open an empty text file, the default values are restored; following an example of text content::
+
+	NDVI; ( "#NIR#" - "#RED#" ) / ( "#NIR#" + "#RED#" ) @NDVI
+	EVI; 2.5 * ( "#NIR#" - "#RED#" ) / ( "#NIR#" + 6 * "#RED#" - 7.5 * "#BLUE#" + 1) @EVI
+	SR; ( "#NIR#" / "#RED#" ) @SR
 
 .. _decision_rules:
 
