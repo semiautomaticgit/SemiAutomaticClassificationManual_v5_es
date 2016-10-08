@@ -20,4 +20,5 @@ The Interface of SCP
 	main_interface_window.rst
 	spectral_signature_plot.rst
 	scatter_plot.rst
+	toolbar_edit_raster.rst
 	

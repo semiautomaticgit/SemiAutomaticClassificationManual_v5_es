@@ -287,6 +287,8 @@ In :ref:`search_Sentinel` set:
 	
 Now click the button :guilabel:`Find` |search_images| and after a few seconds the image will be listed in the ``Image list``.
 
+	**Tip**: download this `zip file <https://docs.google.com/uc?id=0BysUrKXWIDwBZHF6dENlZ0g1Y0k>`_ containing the shapefile of Sentinel-2 granules for identifying the zone; load this shapefile in QGIS, select the granules in your search area and open the attribute table to see the zone name.
+	
 .. figure:: _static/tutorial_2/tutorial_2_1_02.jpg
 	:align: center
 

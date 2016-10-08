@@ -381,6 +381,38 @@ The following images show a few examples of these classes identified in the map.
 	
 	:guilabel:`Bare soil`
 	
+The following examples display a few RGB color composites of Landsat images.
+
+.. figure:: _static/tutorial_1/tutorial_1_3_7.jpg
+	:align: center
+	
+	:guilabel:`Built-up ROI: large buildings`
+	
+.. figure:: _static/tutorial_1/tutorial_1_3_8.jpg
+	:align: center
+	
+	:guilabel:`Built-up ROI: road`
+	
+.. figure:: _static/tutorial_1/tutorial_1_3_9.jpg
+	:align: center
+	
+	:guilabel:`Built-up ROI: buildings and narrow roads`
+	
+.. figure:: _static/tutorial_1/tutorial_1_3_10.jpg
+	:align: center
+	
+	:guilabel:`Bare soil ROI: uncultivated land`
+	
+.. figure:: _static/tutorial_1/tutorial_1_3_11.jpg
+	:align: center
+	
+	:guilabel:`Vegetation ROI: deciduous trees`
+	
+.. figure:: _static/tutorial_1/tutorial_1_3_12.jpg
+	:align: center
+	
+	:guilabel:`Vegetation ROI: crop`
+	
 .. _tutorial_1_4:
 
 Create a Classification Preview

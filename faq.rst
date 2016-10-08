@@ -90,7 +90,10 @@ Pre processing
 Which image bands should I use for a semi-automatic classification?
 -----------------------------------------------------------------------------------------
 
-In general, it is preferable to avoid thermal infrared bands. If you are using Landsat 4, 5 or 7 you should select bands: 1, 2, 3, 4, 5, 7 avoiding band 6 that is thermal infrared; for Landsat 8 you should select bands: 2, 3, 4, 5, 6, 7.
+In general, it is preferable to avoid thermal infrared bands.
+If you are using Landsat 4, 5 or 7 you should select bands: 1, 2, 3, 4, 5, 7 avoiding band 6 that is thermal infrared; for Landsat 8 you should select bands: 2, 3, 4, 5, 6, 7.
+Landsat 8 band 1 is generally avoided because it is very similar to the blue band and it is mainly used for coastal aerosol study.
+Landsat thermal infrared band is excluded from classifications because values are mainly related to object temperature.
 
 For Sentinel-2 images you can use bands: 2, 3, 4, 5, 6, 7, 8, 8A, 11, 12.
 
@@ -365,6 +368,15 @@ This plugin is broken 'matplotlib requires pyparsing >= 1.5.6'. Why?
 It is related to this issue https://hub.qgis.org/issues/14952 which should affect QGIS 32bit only.
 The installation of QGIS 64bit should work.
 As a solution you can install a previous version of `QGIS 2.8 32bit <http://qgis.org/downloads/QGIS-OSGeo4W-2.8.2-1-Setup-x86.exe>`_ .
+
+.. _error_7:
+
+Error installing the plugin, possible missing dependencies. Why?
+-----------------------------------------------------------------------------------------
+
+The plugin requires the installation of GDAL, NumPy, SciPy and Matplotlib, which should be installed along with QGIS.
+If the plugin installation fails, and you get a message about possible missing dependencies, you should try to install or update QGIS and the required dependencies.
+Notice that in order to avoid this error, python dependencies should not be installed through Anaconda.
 
 .. _FAQ_other:
  

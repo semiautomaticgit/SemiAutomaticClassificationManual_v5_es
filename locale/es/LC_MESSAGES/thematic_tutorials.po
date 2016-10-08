@@ -26,7 +26,7 @@ msgstr ""
 "Los siguientes son tutoriales temáticos. Antes de seguirlos, es recomendable"
 " seguir los :ref:`tutorials`."
 
-#: ../../thematic_tutorials.rst:19
+#: ../../thematic_tutorials.rst:20
 msgid ""
 "Also, visit the blog `From GIS to Remote Sensing "
 "<http://fromgistors.blogspot.com/search/label/Tutorial>`_ for other "
@@ -36,34 +36,34 @@ msgstr ""
 "<http://fromgistors.blogspot.com/search/label/Tutorial>`_ para otros "
 "tutoriales como:"
 
-#: ../../thematic_tutorials.rst:21
-msgid ""
-"`Supervised Classification of Hyperspectral Data "
-"<http://fromgistors.blogspot.com/2014/10/supervised-classification-of-"
-"hyperspectral.html>`_;"
-msgstr ""
-"`Supervised Classification of Hyperspectral Data "
-"<http://fromgistors.blogspot.com/2014/10/supervised-classification-of-"
-"hyperspectral.html>`_;"
-
 #: ../../thematic_tutorials.rst:22
 msgid ""
-"`Monitoring Deforestation <http://fromgistors.blogspot.com/2014/09"
-"/monitoring-changes-in-amazon-rainforest.html>`_;"
+"`Supervised Classification of Hyperspectral Data "
+"<http://fromgistors.blogspot.com/2014/10/supervised-classification-of-"
+"hyperspectral.html>`_;"
 msgstr ""
-"`Monitoring Deforestation <http://fromgistors.blogspot.com/2014/09"
-"/monitoring-changes-in-amazon-rainforest.html>`_;"
+"`Supervised Classification of Hyperspectral Data "
+"<http://fromgistors.blogspot.com/2014/10/supervised-classification-of-"
+"hyperspectral.html>`_;"
 
 #: ../../thematic_tutorials.rst:23
 msgid ""
-"`Flood Monitoring <http://fromgistors.blogspot.com/2014/09/flood-monitoring-"
-"tutorial-using-semi.html>`_;"
+"`Monitoring Deforestation <http://fromgistors.blogspot.com/2014/09"
+"/monitoring-changes-in-amazon-rainforest.html>`_;"
 msgstr ""
-"`Flood Monitoring <http://fromgistors.blogspot.com/2014/09/flood-monitoring-"
-"tutorial-using-semi.html>`_;"
+"`Monitoring Deforestation <http://fromgistors.blogspot.com/2014/09"
+"/monitoring-changes-in-amazon-rainforest.html>`_;"
 
 #: ../../thematic_tutorials.rst:24
 msgid ""
+"`Flood Monitoring <http://fromgistors.blogspot.com/2014/09/flood-monitoring-"
+"tutorial-using-semi.html>`_;"
+msgstr ""
+"`Flood Monitoring <http://fromgistors.blogspot.com/2014/09/flood-monitoring-"
+"tutorial-using-semi.html>`_;"
+
+#: ../../thematic_tutorials.rst:25
+msgid ""
 "`Estimation of Land Surface Temperature with Landsat Thermal Infrared Band "
 "<http://fromgistors.blogspot.com/2014/01/estimation-of-land-surface-"
 "temperature.html>`_;"
@@ -72,7 +72,7 @@ msgstr ""
 "<http://fromgistors.blogspot.com/2014/01/estimation-of-land-surface-"
 "temperature.html>`_;"
 
-#: ../../thematic_tutorials.rst:25
+#: ../../thematic_tutorials.rst:26
 msgid ""
 "`Land Cover Classification of Cropland "
 "<http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-"
@@ -82,7 +82,7 @@ msgstr ""
 "<http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-"
 "cropland.html>`_."
 
-#: ../../thematic_tutorials.rst:27
+#: ../../thematic_tutorials.rst:28
 msgid ""
 "For other unofficial tutorials, also in languages other than English, see "
 ":ref:`other_3`."

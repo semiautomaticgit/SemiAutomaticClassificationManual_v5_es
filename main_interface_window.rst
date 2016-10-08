@@ -457,6 +457,8 @@ Sentinel images
 * |remove|: remove highlighted images from the list;
 * |reset|: remove all images from the list;
 
+	**Tip**: download this `zip file <https://docs.google.com/uc?id=0BysUrKXWIDwBZHF6dENlZ0g1Y0k>`_ containing the shapefile of Sentinel-2 granules for identifying the zone; load this shapefile in QGIS, select the granules in your search area and open the attribute table to see the zone name.
+
 .. _sentinel2_download_options:
 
 Download options
@@ -1412,6 +1414,7 @@ Only pixels beneath ROI polygons or vector polygons are edited.
 	**Attention**: the input raster is directly edited; it is recommended to create a **backup copy** of the input raster before using this tool in order to prevent data loss.
 
 This tool can rapidly edit large rasters, especially when editing polygons are small, because pixel values are edited directly.
+In addition, the :ref:`toolbar_edit_raster` is available for easing the raster editing using multiple values.
 	
 * :guilabel:`Select the input raster` |input_list|: select a raster (already loaded in QGIS);
 * |reload|: refresh layer list;
@@ -1670,6 +1673,7 @@ The output raster is a .tif file, with the same spatial resolution and projectio
 * Extent: if the following options are unchecked, the output raster extent will include the extents of all input rasters;
 	* |checkbox| :guilabel:`Intersection`: if checked, the extent of output raster equals the intersection of input raster extents (i.e. minimum extent);
 	* |checkbox| :guilabel:`Same as` |input_list|: if checked, the extent of output raster equals the extent of :guilabel:`"Map extent"` (the extent of the map currently displayed) or a selected layer;
+* |radiobutton| :guilabel:`Align`: if checked, and |checkbox| :guilabel:`Same as` is checked selecting a raster, the calculation is performed using the same extent and pixel alignment of selected raster;
 * |run|: if ``Expression`` is active and text is green, choose the output destination and start the calculation based on ``Expression``; if ``Decision rules`` is active and text is green, choose the output destination and start the calculation based on ``Decision rules``;
 
 .. _band_set_tab:
