@@ -305,6 +305,7 @@ Define the search settings such as date of acquisition, maximum cloud cover, or 
 * :guilabel:`Date from` |input_date|: set the starting date of acquisition;
 * :guilabel:`to` |input_date|: set the ending date of acquisition;
 * :guilabel:`Max cloud cover (%)` |input_number|: maximum cloud cover in the image;
+* :guilabel:`Results` |input_number|: maximum number of images returned by the search;
 * :guilabel:`Filter` |input_text|: set a filter such as the Image ID of Landsat images (e.g. ``LC81910312015006LGN00``); it is possible to enter multiple Image IDs separated by comma or semicolon (e.g. ``LC81910312015006LGN00, LC81910312013224LGN00`` ); filtered images must be inside the search area;
 * :guilabel:`Find` |search_images|: find the images in the search area; results are displayed inside the table in :ref:`landsat_images`; results are added to previous results;
 
@@ -427,6 +428,7 @@ Define search settings such as the date of acquisition or search for specific Se
 * :guilabel:`Date from` |input_date|: set the starting date of acquisition;
 * :guilabel:`to` |input_date|: set the ending date of acquisition;
 * :guilabel:`Max cloud cover (%)` |input_number|: maximum cloud cover in the image;
+* :guilabel:`Results` |input_number|: maximum number of images returned by the search;
 * :guilabel:`Filter` |input_text|: set a filter such as the Image Name of Sentinel images (e.g. ``S2A_OPER_PRD_MSIL1C_PDMC_20160419T190217_R022_V20160419T101026``);
 * :guilabel:`Find` |search_images|: find the images in the search area; results are displayed inside the table in :ref:`Sentinel_images`; results are added to previous results;
 
@@ -550,6 +552,7 @@ Define the search settings such as date of acquisition, maximum cloud cover, or 
 * :guilabel:`Date from` |input_date|: set the starting date of acquisition;
 * :guilabel:`to` |input_date|: set the ending date of acquisition;
 * :guilabel:`Max cloud cover (%)` |input_number|: maximum cloud cover in the image;
+* :guilabel:`Results` |input_number|: maximum number of images returned by the search;
 * :guilabel:`Filter` |input_text|: set a filter such as the Image ID of ASTER images; it is possible to enter multiple Image IDs separated by comma or semicolon; filtered images must be inside the search area;
 * :guilabel:`Find` |search_images|: find the images in the search area; results are displayed inside the table in :ref:`ASTER_images`; results are added to previous results;
 

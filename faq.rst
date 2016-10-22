@@ -417,7 +417,7 @@ Also, an output raster can be calculated based on :ref:`decision_rules`.
 
 The tool :ref:`batch_tab` allows for the automatic execution of several :guilabel:`SCP` functions using a scripting interface.
 
-See the ref:`tutorials` for more information and examples.
+See the :ref:`tutorials` for more information and examples.
 
 .. _other_1:
 
@@ -426,7 +426,7 @@ How to contribute to SCP
 
 You can contribute to :guilabel:`SCP` by fixing and adding functionalities (see :ref:`other_5`), or translating the user manual (see :ref:`other_4`).
 
-Also, you can donate to this project at the following link http://fromgistors.blogspot.com/p/donations.html .
+Also, you can donate to this project at the following link https://fromgistors.blogspot.com/p/donations.html .
 
 .. _other_2:
 
@@ -480,26 +480,26 @@ The following guide illustrates the main steps for the translation, which can be
 * using the free online service Transifex;
 * using the gettext .po files.
 
+Before translating, please `read this document <http://docs.qgis.org/testing/en/docs/documentation_guidelines/do_translations.html#translate-a-manual>`_ from the QGIS translation guide, which helps you understand the reStructuredText.
+
 **Method 1. Translation using the free online service Transifex**
 
 This is probably the easiest way to translate the manual using an online service.
 
-1. Transifex free registration
+1. Join the Semi-automatic Classification Manual project
 	
-	Go to the Transifex login page (https://www.transifex.com/signin/).
+	Go to the page https://www.transifex.com/semi-automatic-classification/semi-automatic-classification-plugin-manual and click the button ``Help translate``.
 	You can sign in using your Google or Facebook account, or with a free registration.
 	
-2. Join the Semi-automatic Classification Manual project
+2. Select your language
 	
-	Go to the page https://www.transifex.com/semi-automatic-classification/semi-automatic-classification-plugin-manual .
-	Select your language and click the button Join team.
-	If your language is not listed, click the button Request language.
+	Select your language and click the button ``Join team``.
+	If your language is not listed, click the button ``Request language``.
 
 3. Translation
 
-	There are several files to be translated, which refer to the sections of the :guilabel:`SCP` manual.
-	The translation is performed through an online application, which shows you each sentence in the original English version, and a text editor allows for the translation to your language.
-	This should make the translation process very rapid and easy.
+	There are several files to be translated, which refer to the sections of the SCP documentation.
+	To translate the SCP interface you should select the file ``semiautomaticclassificationplugin.ts`` . 
 	
 **Method 2. Translation using the gettext .po files**
 
