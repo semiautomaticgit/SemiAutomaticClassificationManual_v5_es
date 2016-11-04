@@ -1829,7 +1829,7 @@ If the expression contains errors, the text is red.
 
 In addition, the following functions are available:
 	* :guilabel:`Add raster to QGIS`: add a raster to QGIS (``add_raster;input_raster_path : '';input_raster_name : ''``);
-	* :guilabel:`Create Band set`: create a :guilabel:`Band set` (``create_bandset;raster_path_list : '';center_wavelength : '';multiplicative_factor : '';additive_factor : ''``);
+	* :guilabel:`Create Band set`: create a :guilabel:`Band set` (``create_bandset;raster_path_list : '';center_wavelength : '';wavelength_unit : 1;multiplicative_factor : '';additive_factor : ''``);
 	* :guilabel:`Open training input`: open a training input file (``open_training_input;training_file_path : ''``);
 	* :guilabel:`Set working directory`: set a working directory (argument is the path to a directory) (``!working_dir!;''``);
 
