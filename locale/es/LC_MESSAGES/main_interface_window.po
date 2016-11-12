@@ -4115,16 +4115,6 @@ msgstr ""
 ":guilabel:`Agregar ráster a QGIS`: agrega un ráster a QGIS "
 "(``add_raster;input_raster_path : '';input_raster_name : ''``);"
 
-#: ../../main_interface_window.rst:1832
-msgid ""
-":guilabel:`Create Band set`: create a :guilabel:`Band set` "
-"(``create_bandset;raster_path_list : '';center_wavelength : "
-"'';multiplicative_factor : '';additive_factor : ''``);"
-msgstr ""
-":guilabel:`Crear Juego de bandas`: crea un :guilabel:`Juego de bandas` "
-"(``create_bandset;raster_path_list : '';center_wavelength : "
-"'';multiplicative_factor : '';additive_factor : ''``);"
-
 #: ../../main_interface_window.rst:1833
 msgid ""
 ":guilabel:`Open training input`: open a training input file "
@@ -4507,6 +4497,22 @@ msgid ""
 ":guilabel:`Results` |input_number|: maximum number of images returned by the"
 " search;"
 msgstr ""
+
+#: ../../main_interface_window.rst:1832
+msgid ""
+":guilabel:`Create Band set`: create a :guilabel:`Band set` "
+"(``create_bandset;raster_path_list : '';center_wavelength : "
+"'';wavelength_unit : 1;multiplicative_factor : '';additive_factor : ''``);"
+msgstr ""
+
+#~ msgid ""
+#~ ":guilabel:`Create Band set`: create a :guilabel:`Band set` "
+#~ "(``create_bandset;raster_path_list : '';center_wavelength : "
+#~ "'';multiplicative_factor : '';additive_factor : ''``);"
+#~ msgstr ""
+#~ ":guilabel:`Crear Juego de bandas`: crea un :guilabel:`Juego de bandas` "
+#~ "(``create_bandset;raster_path_list : '';center_wavelength : "
+#~ "'';multiplicative_factor : '';additive_factor : ''``);"
 
 #~ msgid ""
 #~ "This tool can rapidly edit large rasters, especially when editing polygons "

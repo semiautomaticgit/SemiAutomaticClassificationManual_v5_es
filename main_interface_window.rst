@@ -184,6 +184,9 @@ Main Interface Window
 .. |report_tool| image:: _static/semiautomaticclassificationplugin_report_tool.png
 	:width: 20pt
 
+.. |cross_classification| image:: _static/semiautomaticclassificationplugin_cross_classification.png
+	:width: 20pt
+
 .. |class_to_vector_tool| image:: _static/semiautomaticclassificationplugin_class_to_vector_tool.png
 	:width: 20pt
 
@@ -1311,7 +1314,7 @@ Input
 
 * :guilabel:`Select the classification` |input_list|: select a classification raster (already loaded in QGIS);
 * |reload|: refresh layer list;
-* |checkbox| :guilabel:`Use NoData value` |input_number|: if checked, `NoData`` value will be excluded from the report;
+* |checkbox| :guilabel:`Use NoData value` |input_number|: if checked, ``NoData`` value will be excluded from the report;
 
 .. _run_tool_11:
 
@@ -1319,6 +1322,45 @@ Run
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * |run|: choose the output destination and start the calculation; the report is saved in a text file and displayed in the tab :guilabel:`Output`;
+
+.. _cross_classification_tab:
+
+Cross classification
+-------------------------
+
+.. figure:: _static/cross_classification_tab.jpg
+	:align: center
+	:width: 500pt
+	
+	|cross_classification| :guilabel:`Cross classification`
+	
+
+This tab allows for the calculation of a cross classification raster and matrix. 
+Classification is compared to a reference raster or reference shapefile (which is automatically converted to raster).
+This is useful for calculating the area for every combination between reference classes and classification values.
+If a shapefile is selected as reference, it is possible to choose a field describing class values.
+
+The output is a ``cross raster`` that is a ``.tif`` file where pixel values represent the categories of comparison (i.e. combinations identified by the ``CrossMatrixCode``) between the classification and reference.
+Also, a text file containing the cross matrix (i.e. a ``.csv`` file separated by tab) is created with the same name defined for the ``.tif`` file.
+
+.. _cross_matrix_input:
+
+Input
+^^^^^^^^^^^^^^^^^^
+
+* :guilabel:`Select the classification` |input_list|: select a classification raster (already loaded in QGIS);
+* |reload|: refresh layer list;
+* |checkbox| :guilabel:`Use NoData value` |input_number|: if checked, ``NoData`` value will be excluded from the calculation;
+* :guilabel:`Select the reference shapefile or raster` |input_list|: select a raster or a shapefile (already loaded in QGIS), used as reference layer;
+* |reload|: refresh layer list;
+* :guilabel:`Shapefile field` |input_list|: if a shapefile is selected as reference, select a shapefile field containing numeric class values;
+
+.. _run_tool_18:
+
+Run
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* |run|: choose the output destination and start the calculation; the cross matrix is displayed in the tab :guilabel:`Output` and the ``cross raster`` is loaded in QGIS;
 
 .. _classification_vector_tab:
 
@@ -1580,6 +1622,10 @@ In addition, the following variables related to :ref:`band_set_tab` the are avai
 * :guilabel:`"#RED#"`: the band with the center wavelength closest to 0.65 :math:`\mu m`;
 * :guilabel:`"#NIR#"`: the band with the center wavelength closest to 0.85 :math:`\mu m`;
 
+Variables for output name are available:
+* :guilabel:`#BANDSET#`: the name of the first band in the :ref:`band_set_tab`;
+* :guilabel:`#DATE#`: the current date and time (e.g. 20161110_113846527764);
+
 If text in the :guilabel:`Expression` is green, then the syntax is correct; if text is red, then the syntax is incorrect and it is not possible to execute the calculation.
 
 It is possible to enter multiple expressions separated by newlines such as the following example:
@@ -1797,6 +1843,7 @@ Each functions has options, identified by a name, with the following structure:
 	
 Options must be separated by the character ``;`` .
 Each function option represents an option in the corresponding interface of :guilabel:`SCP`; option arguments of type text must be between the character ``'`` ; in case of checkboxes, the value 1 represents checked, while the value 0 represents unchecked.
+A new line beginning with ``#`` can be used for commenting.
 
 According to the function, some of the options are mandatory while other options can be omitted from the expression. Option names that contain ``path`` require the full path to a file.
 Some options that require multiple arguments such as lists; lists must be separated by ``,`` .
@@ -1809,7 +1856,7 @@ If the expression contains errors, the text is red.
 
 :guilabel:`Functions`: the following functions are available with the corresponding options;
 	* :ref:`accuracy_tab`: calculate accuracy (``accuracy;classification_file_path : '';reference_file_path : '';shapefile_field_name : '';output_raster_path : ''``);
-	* :ref:`aster_tab`: ASTER conversion of (``aster_conversion;input_raster_path : '';celsius_temperature : 0;apply_dos1 : 0;use_nodata : 1;nodata_value : 0;create_bandset : 1;output_dir : ''``);
+	* :ref:`aster_tab`: ASTER conversion (``aster_conversion;input_raster_path : '';celsius_temperature : 0;apply_dos1 : 0;use_nodata : 1;nodata_value : 0;create_bandset : 1;output_dir : ''``);
 	* :ref:`band_calc_tab`: band calculation (``band_calc;expression : '';output_raster_path : '';extent_same_as_raster_name : '';extent_intersection : 1;set_nodata : 0;nodata_value : 0``);
 	* :ref:`classification_output`: perform classification (``classification;use_macroclass : 0;algorithm_name  : 'Minimum Distance';use_lcs : 0;use_lcs_algorithm : 0;use_lcs_only_overlap : 0;apply_mask : 0;mask_file_path : '';vector_output : 0;classification_report : 0;save_algorithm_files : 0;output_classification_path : ''``);
 	* :ref:`classification_dilation_tab`: dilation of a classification (``classification_dilation;input_raster_path : '';class_values : '';size_in_pixels : 1;pixel_connection : 4;output_raster_path : ''``);
@@ -1818,12 +1865,13 @@ If the expression contains errors, the text is red.
 	* :ref:`classification_sieve_tab`: classification sieve(``classification_sieve;input_raster_path : '';size_threshold : 2;pixel_connection : 4;output_raster_path : ''``);
 	* :ref:`classification_vector_tab`: convert classification to vector (``classification_to_vector;input_raster_path : '';use_signature_list_code : 1;code_field : 'C_ID';output_vector_path : ''``);
 	* :ref:`clip_multiple_rasters_tab`: clip multiple rasters (``clip_multiple_rasters;input_raster_path : '';output_dir : '';use_shapefile : 0;shapefile_path : '';ul_x : '';ul_y : '';lr_x : '';lr_y : '';nodata_value : 0;output_name_prefix : 'clip'``);
-	* :ref:`edit_raster_tab`: edit raster values using a shapefile (``edit_raster_using_shapefile;input_raster_path : '';input_vector_path : '';vector_field_name : '';constant_value : 0;expression :  'where(raster == 1, 2, raster)'``);
+	* :ref:`cross_classification_tab`: cross classification (``cross_classification;classification_file_path : '';use_nodata : 0;nodata_value : 0;reference_file_path : '';shapefile_field_name : '';output_raster_path : ''``);
+	* :ref:`edit_raster_tab`: edit raster values using a shapefile); (``edit_raster_using_shapefile;input_raster_path : '';input_vector_path : '';vector_field_name : '';constant_value : 0;expression :  'where(raster == 1, 2, raster)'``);
 	* :ref:`land_cover_change_tab`: calculate land cover change (``land_cover_change;reference_raster_path : '';new_raster_path : '';output_raster_path : ''``);
 	* :ref:`landsat_tab`: Landsat conversion (``landsat_conversion;input_dir : '';mtl_file_path : '';celsius_temperature : 0;apply_dos1 : 0;use_nodata : 1;nodata_value : 0;pansharpening : 0;create_bandset : 1;output_dir : ''``);
 	* :ref:`pca_tab`: Principal Component Analysis (``pca;use_number_of_components : 0, number_of_components : 2;use_nodata : 1;nodata_value : 0;output_dir : ''``);
 	* :ref:`reclassification_tab`: raster reclassification (``reclassification;input_raster_path : '';value_list : 'oldVal-newVal;oldVal-newVal';use_signature_list_code : 1;code_field : 'MC_ID';output_raster_path : ''``);
-	* :ref:`sentinel2_tab`: Sentinel-2 conversion(``sentinel_conversion;input_dir : '';mtd_safl1c_file_path : '';apply_dos1 : 0;use_nodata : 1;nodata_value : 0;create_bandset : 1;output_dir : ''``);
+	* :ref:`sentinel2_tab`: Sentinel-2 conversion (``sentinel_conversion;input_dir : '';mtd_safl1c_file_path : '';apply_dos1 : 0;use_nodata : 1;nodata_value : 0;create_bandset : 1;output_dir : ''``);
 	* :ref:`split_raster_tab`: split raster to single bands (``split_raster_bands;input_raster_path : '';output_dir : '';output_name_prefix : 'split'``);
 	* :ref:`vector_to_raster_tab`: convert vector to raster (``vector_to_raster;vector_file_path : '';use_value_field : 1;vector_field_name : '';constant_value : 1;reference_raster_path : '';type_of_conversion : 'Center of pixels';output_raster_path : ''``);
 
