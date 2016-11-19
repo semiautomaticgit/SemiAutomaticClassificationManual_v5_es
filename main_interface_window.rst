@@ -385,6 +385,7 @@ Sentinel-2 download
 
 **Sentinel-2** is a European satellite launched in 2015, developed in the frame of Copernicus land monitoring services, which acquires 13 spectral bands (see :ref:`Sentinel2_definition`).
 This tab allows for searching and downloading the free Sentinel-2 images (Level-1C) from the Sentinels `Scientific Data Hub <https://scihub.copernicus.eu/>`_ (using the `Data Hub API <https://scihub.copernicus.eu/userguide/5APIsAndBatchScripting>`_ ).
+Images are mainly downloaded from the `Amazon S3 AWS <http://sentinel-pds.s3-website.eu-central-1.amazonaws.com>`_ if available.
 
 Sentinel-2 satellite has a swath width of 290km.
 Sentinel-2 Level-1C images are delivered in granules (also called tiles) with a side of 100km in UTM/WGS84 projection.
@@ -400,7 +401,7 @@ Login Sentinels
 In order to access to Sentinel data a free registration is required at https://scihub.copernicus.eu/userguide/1SelfRegistration (other services may require different registrations).
 After the registration, enter the user name and password for accessing data.
 	
-* :guilabel:`Service` |input_text| |registry_save|: enter the service URL (default is https://scihub.copernicus.eu/s2); other mirror services that share the same infrastructure can be used (such as https://scihub.copernicus.eu/dhus , https://finhub.nsdc.fmi.fi , https://data.sentinel.zamg.ac.at);
+* :guilabel:`Service` |input_text| |registry_save|: enter the service URL (default is https://scihub.copernicus.eu/apihub); other mirror services that share the same infrastructure can be used (such as https://scihub.copernicus.eu/dhus , https://finhub.nsdc.fmi.fi , https://data.sentinel.zamg.ac.at);
 * |reset|: reset the default service https://scihub.copernicus.eu/s2);
 * :guilabel:`User` |input_text| |registry_save|: enter the user name;
 * :guilabel:`Password` |input_text| |registry_save|: enter the password;
@@ -478,6 +479,7 @@ Download options
 This tab allows for the selection of single bands.
 
 * |checkbox| :guilabel:`Band` ``X``: select bands for download;
+* |checkbox| :guilabel:`Ancillary data`: if checked, the metadata files (a .xml file whose name contains ``MTD_SAFL1C`` and a .xml file whose name contains ``MTD_L1C``) and the cloud mask file (a .gml file whose name contains ``MSK_CLOUDS``) are downloaded;
 * |select_all|: select or deselect all bands;
 	
 .. _Sentinel_download:
@@ -487,7 +489,6 @@ Download
 
 Download  the Sentinel-2 images in the :ref:`Sentinel_images`.
 Bands selected in :ref:`sentinel2_download_options` are downloaded.
-Also, the metadata files (a .xml file whose name contains ``MTD_SAFL1C`` and a .xml file whose name contains ``MTD_L1C``) and the cloud mask file (a .gml file whose name contains ``MSK_CLOUDS``) are downloaded.
 
 During the download it is recommended not to interact with QGIS.
 

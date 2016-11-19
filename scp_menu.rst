@@ -43,6 +43,9 @@ SCP menu
 				
 .. |help| image:: _static/help.png
 	:width: 20pt
+	
+.. |docks| image:: _static/semiautomaticclassificationplugin_docks.png
+	:width: 20pt
 	 
 .. figure:: _static/SCP_menu.jpg
 	:align: center
@@ -63,3 +66,4 @@ The :guilabel:`SCP menu` allows for the selection of the main functions of the :
 * |settings| :ref:`settings_tab`;
 * |guide| :guilabel:`User manual`: open the online user manual in a web browser;
 * |help| :guilabel:`Online help`: open the `Online help <http://fromgistors.blogspot.com/p/online-help.html>`_ in a web browser; also, a `Facebook group <https://www.facebook.com/groups/SemiAutomaticClassificationPlugin/>`_ and a `Google+ Community <https://plus.google.com/communities/107833394986612468374>`_ are available for sharing information and asking for help about SCP;
+* |docks| :guilabel:`Show plugin`: show all the SCP toolbars and dock if previously hidden;

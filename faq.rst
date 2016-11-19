@@ -456,6 +456,11 @@ Following an incomplete list of these resources:
 	* `German: 2015 Jakob Erfassung von Landnutzungsveränderungen mit FOSS Image Processing Tools <https://www.youtube.com/watch?v=vIsHFvLS5_Q>`_;
 	* `Italian: Classificazione e Mosaico di Varie Immagini Landsat <http://fromgistors.blogspot.com/2015/09/tutorial-classificazione-mosaico-landsat.html>`_;
 	* `Korean: QGIS Semi-Automatic Classification Plugin <http://blog.daum.net/geoscience/715>`_;
+	* `Portuguese: Classificacao supervisionada de imagens Sentinel-2 com QGIS e SCP <https://www.youtube.com/watch?v=t5D6JT7adYY>`_;
+	* `Portuguese: Avaliação do erro de uma imagem de satélite usando o QGIS e o SCP <https://www.youtube.com/watch?v=k1yjcJPb1WI>`_;
+	* `Portuguese: Conversão Sentinel-2 para refletância com QGIS SCP <https://www.youtube.com/watch?v=m3XFvvVrU24>`_;
+	* `Portuguese: Criar composições coloridas no QGIS com SCP <https://www.youtube.com/watch?v=LWvDEE1Evxg>`_;
+	* `Portuguese: Corte de imagem Sentinel-2 usand QGIS e SCP <https://www.youtube.com/watch?v=8UHey-bQJGs>`_;
 	* `Portuguese: Classificação Supervisionada de Imagens Orbitais com o Semi-Automatic Classification Plugin <http://qgisbrasil.org/blog/wp-content/uploads/2015/08/tutorial_scp_01.pdf>`_;
 	* `Portuguese: Tutorial Classificação e caracterização de imagens de satélites <https://www.youtube.com/watch?v=Wab1UVmVl0k>`_;
 	* `Portuguese: Aprendizagem Supervisionada usando o SCP no QGIS <https://www.youtube.com/watch?v=FDYQrDb4qYY>`_;
@@ -465,7 +470,8 @@ Following an incomplete list of these resources:
 	* `Spanish: Aplicaciones de Teledetección con el QGIS y el plugin Semi-Automatic Classification <http://carbajallosa.blogspot.it/2015/04/aplicaciones-de-teledeteccion-con-el.html>`_;
 	* `Spanish: Descarga de Landsat 8, 7, 5 y 4 Semi Automatic Classification Plugin Qgis 2.8 <http://sistemasdeinformaciongeografica911.blogspot.mx/2015/04/descarga-de-landsat-5-7-y-8-qgis-semi.html>`_;
 	* `Swedish: Landsat 8 och fjärranalys med QGIS <https://geosupportsystem.wordpress.com/2015/04/02/landsat-8-och-fjarranalys-med-qgis/>`_;
-	* `Ukrainian: Посібник користувача модуля Напівавтоматичної класифікації <http://semiautomaticclassificationmanual.readthedocs.org/uk_UA/latest/>`_;
+	* `Ukrainian: Основи дешифрування плагіном Semi-Automatic Classification 5.0 <https://www.youtube.com/watch?v=kwI4RhYr8Rc>`_;
+	* `Ukrainian: Посібник користувача модуля Напівавтоматичної класифікації <http://semiautomaticclassificationmanual-v3.readthedocs.io/uk_UA/latest/>`_;
 
 
 .. _other_4:
