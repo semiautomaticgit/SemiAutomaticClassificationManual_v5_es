@@ -1,0 +1,50 @@
+# Translators:
+# Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Semi-Automatic Classification Plugin 5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-08 16:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016\n"
+"Language-Team: Spanish (https://www.transifex.com/semi-automatic-classification/teams/53374/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../toolbar_edit_raster.rst:5
+msgid "SCP Edit Toolbar"
+msgstr ""
+
+#: ../../toolbar_edit_raster.rst:26
+msgid ":guilabel:`SCP Tools`"
+msgstr ":guilabel:`SCP Herramientas`"
+
+#: ../../toolbar_edit_raster.rst:28
+msgid ""
+"The :guilabel:`SCP Edit Toolbar` allows for the direct editing of pixel "
+"values in the input raster defined in :ref:`edit_raster_tab` using ROI "
+"polygons. Only pixels beneath ROI polygons are edited."
+msgstr ""
+
+#: ../../toolbar_edit_raster.rst:31
+msgid ""
+"|edit_raster|: open the tool :guilabel:`SCP Edit Toolbar` for selecting the "
+"input raster;"
+msgstr ""
+
+#: ../../toolbar_edit_raster.rst:32 ../../toolbar_edit_raster.rst:33
+#: ../../toolbar_edit_raster.rst:34
+msgid ""
+"|input_number| |enter|: edit the raster using the selected constant value;"
+msgstr ""
+
+#: ../../toolbar_edit_raster.rst:35
+msgid ""
+"|undo_edit_raster|: undo the last raster edit (available only when using ROI"
+" polygons);"
+msgstr ""
+"|undo_edit_raster|: deshace la última edición ráster (disponible solamente "
+"cuando se utiliza polígonos ROI);"

@@ -1,12 +1,13 @@
 # Translators:
 # Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016
+# Daniel Orellana (Temporalista) <temporalista@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-18 22:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016\n"
+"Last-Translator: Daniel Orellana (Temporalista) <temporalista@gmail.com>, 2016\n"
 "Language-Team: Spanish (https://www.transifex.com/semi-automatic-classification/teams/53374/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +29,7 @@ msgid ""
 " ) which provides always the latest version of SCP."
 msgstr ""
 "El sistema Semi-Automatic OS es una máquina virtual ligera para la "
-"clasificación de la cobertura terrestre con imágenes de sensores remotos. "
+"clasificación de la cobertura  del suelo con imágenes de sensores remotos. "
 "Incluye el complemento Semi-Automatic Classification Plugin (SCP) para QGIS,"
 " ya configurado con todas las dependencias requeridas, instalado a través "
 "del repositorio oficial de SCP ( "

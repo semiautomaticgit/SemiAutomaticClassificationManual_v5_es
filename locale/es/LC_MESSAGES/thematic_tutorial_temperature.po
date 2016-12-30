@@ -2,13 +2,15 @@
 # Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016
 # Luca Congedo <semiautomatic.blogger@gmail.com>, 2016
 # David López <535817@gmail.com>, 2016
+# Francisco Limon <Wany1954@armyspy.com>, 2016
+# Daniel Orellana (Temporalista) <temporalista@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Semi-Automatic Classification Plugin 5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-18 22:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: David López <535817@gmail.com>, 2016\n"
+"Last-Translator: Daniel Orellana (Temporalista) <temporalista@gmail.com>, 2016\n"
 "Language-Team: Spanish (https://www.transifex.com/semi-automatic-classification/teams/53374/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -147,6 +149,8 @@ msgid ""
 "Now click the button :guilabel:`Find` |search_images| and after a few "
 "seconds the image will be listed in the ``Image list``."
 msgstr ""
+"Ahora pulsa el botón :guilabel:`Buscar` |search_images| y luego de unos "
+"segundos la imagen se mostrará en la ``lista de imágenes``. "
 
 #: ../../thematic_tutorial_temperature.rst:285
 msgid ":guilabel:`Landsat search result`"
@@ -162,7 +166,7 @@ msgstr ""
 
 #: ../../thematic_tutorial_temperature.rst:293
 msgid ":guilabel:`Image preview`"
-msgstr ""
+msgstr ":guilabel:`Vista previa de la imagen`"
 
 #: ../../thematic_tutorial_temperature.rst:295
 msgid ""
@@ -207,7 +211,7 @@ msgstr ""
 
 #: ../../thematic_tutorial_temperature.rst:310
 msgid ":guilabel:`Selection of bands for download`"
-msgstr ""
+msgstr ":guilabel:`Selección de bandas a descargar`"
 
 #: ../../thematic_tutorial_temperature.rst:312
 msgid ""
@@ -276,7 +280,7 @@ msgstr ""
 #: ../../thematic_tutorial_temperature.rst:348
 #: ../../thematic_tutorial_temperature.rst:590
 msgid ":guilabel:`Clip area`"
-msgstr ""
+msgstr ":guilabel:`Recortar área`"
 
 #: ../../thematic_tutorial_temperature.rst:350
 #: ../../thematic_tutorial_temperature.rst:592
@@ -290,7 +294,7 @@ msgstr ""
 #: ../../thematic_tutorial_temperature.rst:357
 #: ../../thematic_tutorial_temperature.rst:599
 msgid ":guilabel:`Clipped bands`"
-msgstr ""
+msgstr ":guilabel:`Bandas recortadas`"
 
 #: ../../thematic_tutorial_temperature.rst:362
 msgid "Land Cover Classification"
@@ -315,7 +319,7 @@ msgstr ":guilabel:`Macroclases`"
 
 #: ../../thematic_tutorial_temperature.rst:372
 msgid "Macroclass name"
-msgstr ""
+msgstr "Nombre de la Macroclase"
 
 #: ../../thematic_tutorial_temperature.rst:372
 msgid "Macroclass ID"
@@ -366,7 +370,7 @@ msgstr ""
 
 #: ../../thematic_tutorial_temperature.rst:388
 msgid ":guilabel:`Band set`"
-msgstr ""
+msgstr ":guilabel:`Conjunto de bandas`"
 
 #: ../../thematic_tutorial_temperature.rst:390
 msgid ""
@@ -421,15 +425,15 @@ msgstr ""
 
 #: ../../thematic_tutorial_temperature.rst:421
 msgid ":guilabel:`Emissivity values`"
-msgstr ""
+msgstr ":guilabel:`Valores de emisividad`"
 
 #: ../../thematic_tutorial_temperature.rst:424
 msgid "Land surface"
-msgstr ""
+msgstr "Superficie de la tierra"
 
 #: ../../thematic_tutorial_temperature.rst:424
 msgid "Emissivity e"
-msgstr ""
+msgstr "Emisividad e"
 
 #: ../../thematic_tutorial_temperature.rst:426
 #: ../../thematic_tutorial_temperature.rst:430
@@ -490,11 +494,11 @@ msgstr ""
 
 #: ../../thematic_tutorial_temperature.rst:465
 msgid "where:"
-msgstr ""
+msgstr "donde:"
 
 #: ../../thematic_tutorial_temperature.rst:467
 msgid ":math:`\\lambda` = wavelength of emitted radiance"
-msgstr ""
+msgstr ":math:`\\lambda` = longitud de onda de la radiancia emitida"
 
 #: ../../thematic_tutorial_temperature.rst:468
 msgid ":math:`c_{2} = h * c / s = 1.4388 * 10^{-2}` m K = 14388 µm K"
@@ -502,15 +506,15 @@ msgstr ""
 
 #: ../../thematic_tutorial_temperature.rst:469
 msgid ":math:`h` = Planck’s constant = :math:`6.626 * 10^{-34}`  J s"
-msgstr ""
+msgstr ":math:`h` = Constante de Planck’s = :math:`6.626 * 10^{-34}`  J s"
 
 #: ../../thematic_tutorial_temperature.rst:470
 msgid ":math:`s` = Boltzmann constant = :math:`1.38 * 10^{-23}` J/K"
-msgstr ""
+msgstr ":math:`s` = constante de Boltzmann = :math:`1.38 * 10^{-23}` J/K"
 
 #: ../../thematic_tutorial_temperature.rst:471
 msgid ":math:`c` = velocity of light = :math:`2.998 * 10^{8}` m/s"
-msgstr ""
+msgstr ":math:`c` = velocidad de la luz :math:`2.998 * 10^{8}` m/s"
 
 #: ../../thematic_tutorial_temperature.rst:473
 msgid ""
@@ -543,7 +547,7 @@ msgstr ""
 
 #: ../../thematic_tutorial_temperature.rst:480
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../thematic_tutorial_temperature.rst:480
 msgid "11.45"
@@ -557,7 +561,7 @@ msgstr ""
 #: ../../thematic_tutorial_temperature.rst:482
 #: ../../thematic_tutorial_temperature.rst:677
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../thematic_tutorial_temperature.rst:482
 msgid "10.8"
@@ -566,12 +570,12 @@ msgstr ""
 #: ../../thematic_tutorial_temperature.rst:484
 #: ../../thematic_tutorial_temperature.rst:679
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../thematic_tutorial_temperature.rst:484
 #: ../../thematic_tutorial_temperature.rst:681
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../thematic_tutorial_temperature.rst:487
 msgid ""
