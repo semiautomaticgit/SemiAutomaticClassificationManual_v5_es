@@ -194,7 +194,7 @@ The resolutions of Landsat 8 sensor are reported in the following table (from ht
 | Band 11 - Thermal Infrared (TIRS) 2 | 11.50 - 12.51            |  100 (resampled to 30) |
 +-------------------------------------+--------------------------+------------------------+
 
-A vast archive of images is freely available from the `U.S. Geological Survey <http://www.usgs.gov/>`_ . For more information about how to freely download Landsat images read `this  <http://fromgistors.blogspot.com/2014/11/landsat-images-overview-of-worldwide.html>`_ .
+A vast archive of images is freely available from the `U.S. Geological Survey <http://www.usgs.gov/>`_ . For more information about how to freely download Landsat images read `this  <https://fromgistors.blogspot.com/2014/11/landsat-images-overview-of-worldwide.html>`_ .
 
 Images are identified with the paths and rows of the WRS (`Worldwide Reference System for Landsat <http://landsat.gsfc.nasa.gov/?p=3231>`_ ).
 
@@ -284,6 +284,57 @@ An additional band 3B (backwardlooking near-infrared) provides stereo coverage.
 | Band 14 - TIR 5                     | 10.95 - 11.65            |  90                    |
 +-------------------------------------+--------------------------+------------------------+
 
+.. _MODIS_definition:
+
+MODIS Products
+-------------------------
+
+The **MODIS** (Moderate Resolution Imaging Spectroradiometer) is an instrument operating on the Terra and Aqua satellites launched by NASA in 1999 and 2002 respectively.
+Its temporal resolutions allows for viewing the entire Earth surface every one to two days, with a swath width of 2,330.
+Its sensors measure 36 spectral bands at three spatial resolutions: 250m, 500m, and 1,000m (see https://lpdaac.usgs.gov/dataset_discovery/modis).
+
+Several products are available, such as surface reflectance and vegetation indices.
+In this manual we are considering the surface reflectance bands available at 250m and 500m spatial resolution (Vermote, Roger, & Ray, 2015).
+
+	:guilabel:`MODIS Bands`
+	
++-------------------------------------+--------------------------+------------------------+
+| MODIS Bands                         | Wavelength [micrometers] |  Resolution [meters]   |
++=====================================+==========================+========================+
+| Band 1 - Red                        | 0.62 - 0.67              |  250 - 500             |
++-------------------------------------+--------------------------+------------------------+
+| Band 2 - Near Infrared (NIR)        | 0.841 - 0.876            |  250 - 500             |
++-------------------------------------+--------------------------+------------------------+
+| Band 3 - Blue                       | 0.459 - 0.479            |  500                   |
++-------------------------------------+--------------------------+------------------------+
+| Band 4 - Green                      | 0.545 - 0.565            |  500                   |
++-------------------------------------+--------------------------+------------------------+
+| Band 5 - SWIR 1                     | 1.230 - 1.250            |  500                   |
++-------------------------------------+--------------------------+------------------------+
+| Band 6 - SWIR 2                     | 1.628 - 1.652            |  500                   |
++-------------------------------------+--------------------------+------------------------+
+| Band 7 - SWIR 3                     | 2.105 - 2.155            |  500                   |
++-------------------------------------+--------------------------+------------------------+
+
+The following products (Version 6, see https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table) are available for download (Vermote, Roger, & Ray, 2015):
+
+* MOD09GQ: daily reflectance at 250m spatial resolution from Terra MODIS;
+
+* MYD09GQ: daily reflectance at 250m spatial resolution from Aqua MODIS;
+
+* MOD09GA: daily reflectance at 500m spatial resolution from Terra MODIS;
+
+* MYD09GA: daily reflectance at 500m spatial resolution from Aqua MODIS;
+
+* MOD09Q1: reflectance at 250m spatial resolution, which is a composite of MOD09GQ (each pixel contains the best possible observation during an 8-day period);
+
+* MYD09Q1: reflectance at 250m spatial resolution, which is a composite of MYD09GQ (each pixel contains the best possible observation during an 8-day period);
+
+* MOD09A1: reflectance at 250m spatial resolution, which is a composite of MOD09GA (each pixel contains the best possible observation during an 8-day period);
+
+* MYD09A1: reflectance at 250m spatial resolution, which is a composite of MYD09GA (each pixel contains the best possible observation during an 8-day period);
+
+
 .. _color_composite_definition:
 
 Color Composite
@@ -371,12 +422,12 @@ where :math:`I` is Intensity, which is a function of multispectral bands.
 The following weights for I are defined, basing on several tests performed using the :guilabel:`SCP`. For Landsat 8, Intensity is calculated as:
 
 .. math::
-	I = (0.42 * Blue band + 0.98 * Green band + 0.6 *  Red band ) / 2
+	I = (0.42 * Blue + 0.98 * Green + 0.6 *  Red ) / 2
 
 For Landsat 7, Intensity is calculated as:
 
 .. math::
-	I = (0.42 * Blue band + 0.98 * Green band + 0.6 * Red band + NIR band) / 3
+	I = (0.42 * Blue + 0.98 * Green + 0.6 * Red + NIR) / 3
 
 .. _figPanSharpening:
 
@@ -386,6 +437,30 @@ For Landsat 7, Intensity is calculated as:
 	:guilabel:`Example of pan-sharpening of a Landsat 8 image. Left, original multispectral bands (30m); right, pan-sharpened bands (15m)`
 	
 	``Data available from the U.S. Geological Survey``
+
+
+.. _spectral_indices_definition:
+
+Spectral Indices
+-------------------------
+
+Spectral indices are operations between spectral bands that are useful for extracting information such as vegetation cover (JARS, 1993).
+One of the most popular spectral indices is the **Normalized Difference Vegetation Index** (NDVI), defined as (JARS, 1993):
+
+.. math::
+	NDVI = ( NIR - Red ) / ( NIR + Red )
+
+NDVI values range from -1 to 1.
+Dense and healthy vegetation show higher values, while non-vegetated areas show low NDVI values.
+
+Another index is the **Enhanced Vegetation Index** (EVI) which attempts to account for atmospheric effects such as path radiance calculating the difference between the blue and the red bands (Didan,et al., 2015).
+EVI is defined as:
+
+.. math::
+	EVI = G ( NIR - Red ) / ( NIR + C_1 Red - C_2 Blue + L)
+
+where: :math:`G` is a scaling factor, :math:`C_1` and :math:`C_2` are coefficients for the atmospheric effects, and :math:`L` is a factor for accounting the differential NIR and Red radiant transfer through the canopy.
+Typical coefficient values are: :math:`G = 2.5`, :math:`L = 1`, :math:`C_1 = 6`, :math:`C_2 = 7.5` (Didan,et al., 2015).
 	
 .. _semiautomatic_classification_definition:
  
@@ -1203,6 +1278,8 @@ References
 
 * Congalton, R. and Green, K., 2009. Assessing the Accuracy of Remotely Sensed Data: Principles and Practices. Boca Raton, FL: CRC Press
 
+* Didan, K.; Barreto Munoz, A.; Solano, R. & Huete, A. 2015. MODIS Vegetation Index User’s Guide. Collection 6, NASA
+
 * ESA, 2015. Sentinel-2 User Handbook. Available at https://sentinel.esa.int/documents/247904/685211/Sentinel-2_User_Handbook
 
 * Finn, M.P., Reed, M.D, and Yamamoto, K.H. 2012. A Straight Forward Guide for Processing Radiance and Reflectance for EO-1 ALI, Landsat 5 TM, Landsat 7 ETM+, and ASTER. Unpublished Report from USGS/Center of Excellence for Geospatial Information Science, 8 p, http://cegis.usgs.gov/soil_moisture/pdf/A%20Straight%20Forward%20guide%20for%20Processing%20Radiance%20and%20Reflectance_V_24Jul12.pdf
@@ -1234,5 +1311,7 @@ References
 * Sobrino, J.; Jiménez-Muñoz, J. C. & Paolini, L. 2004. Land surface temperature retrieval from LANDSAT TM 5 Remote Sensing of Environment, Elsevier, 90, 434-440
 
 * USGS, 2015. Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Level 1 Precision Terrain Corrected Registered At-Sensor Radiance Product (AST_L1T). AST_L1T Product User’s Guide. USGS EROS Data Center.
+
+* Vermote, E. F.; Roger, J. C. & Ray, J. P. 2015. MODIS Surface Reflectance User’s Guide. Collection 6, NASA
 
 * Weng, Q.; Lu, D. & Schubring, J. 2004. Estimation of land surface temperature–vegetation abundance relationship for urban heat island studies. Remote Sensing of Environment, Elsevier Science Inc., Box 882 New York NY 10159 USA, 89, 467-483 

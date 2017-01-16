@@ -38,7 +38,7 @@ Also, please read the :ref:`FAQ`.
 
 For more information and tutorials visit the official site
 
-	|fromGIStoRS| `From GIS to Remote Sensing <http://fromgistors.blogspot.com>`_
+	|fromGIStoRS| `From GIS to Remote Sensing <https://fromgistors.blogspot.com>`_
 
 |br| 
 

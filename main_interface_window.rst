@@ -112,6 +112,12 @@ Main Interface Window
 .. |landsat_download| image:: _static/semiautomaticclassificationplugin_landsat8_download_tool.png
 	:width: 20pt
 
+.. |aster_download| image:: _static/semiautomaticclassificationplugin_aster_download_tool.png
+	:width: 20pt
+
+.. |modis_download| image:: _static/semiautomaticclassificationplugin_modis_download_tool.png
+	:width: 20pt
+
 .. |sentinel_download| image:: _static/semiautomaticclassificationplugin_sentinel_download_tool.png
 	:width: 20pt
 	
@@ -160,7 +166,13 @@ Main Interface Window
 .. |aster_tool| image:: _static/semiautomaticclassificationplugin_aster_tool.png
 	:width: 20pt
 	
+.. |modis_tool| image:: _static/semiautomaticclassificationplugin_modis_tool.png
+	:width: 20pt
+	
 .. |split_raster| image:: _static/semiautomaticclassificationplugin_split_raster.png
+	:width: 20pt
+	
+.. |stack_raster| image:: _static/semiautomaticclassificationplugin_stack_raster.png
 	:width: 20pt
 	
 .. |clip_tool| image:: _static/semiautomaticclassificationplugin_clip_tool.png
@@ -409,7 +421,7 @@ After the registration, enter the user name and password for accessing data.
 
 .. _area_coordinates_Sentinel:
 
-Area coordinates
+Search area
 ^^^^^^^^^^^^^^^^^
 	
 Define the search area by entering the coordinates (longitude and latitude) of an ``Upper Left`` (UL) point and ``Lower Right`` (LR) point, or interactively drawing an area in the map.
@@ -507,7 +519,7 @@ ASTER download
 	:align: center
 	:width: 500pt
 	
-	|landsat_download| :guilabel:`ASTER download`
+	|aster_download| :guilabel:`ASTER download`
 
 This tab allows for searching and downloading the whole archive of free images L1T acquired by :ref:`ASTER_definition` since 2000.
 Search is performed through the `CMR Search API <https://cmr.earthdata.nasa.gov/search/site/search_api_docs.html>`_ developed by NASA.
@@ -598,6 +610,108 @@ During the download it is recommended not to interact with QGIS.
 * |checkbox| :guilabel:`Load bands in QGIS`: if checked, bands are loaded in QGIS after the download;
 * |export|: export the download links to a text file;
 * |run|: start the download process of all the images listed in :ref:`ASTER_images`;
+
+	
+.. _MODIS_download_tab:
+
+MODIS download 
+----------------------------------------
+
+.. figure:: _static/download_MODIS.jpg
+	:align: center
+	:width: 500pt
+	
+	|modis_download| :guilabel:`MODIS download`
+
+This tab allows for searching and downloading the archive of free :ref:`MODIS_definition` acquired since 2000 (in particular MOD09GQ, MYD09GQ, MOD09GA, MYD09GA, MOD09Q1, MYD09Q1, MOD09A1, MYD09A1).
+Search is performed through the `CMR Search API <https://cmr.earthdata.nasa.gov/search/site/search_api_docs.html>`_ developed by NASA.
+MODIS products are retrieved from the online Data Pool, courtesy of the NASA Land Processes Distributed Active Archive Center (LP DAAC), USGS/Earth Resources Observation and Science (EROS) Center, Sioux Falls, South Dakota, https://lpdaac.usgs.gov/data_access/data_pool.
+
+Also, automatic reprojection of downloaded bands is available.
+	
+.. _login_MODIS:
+
+Login https://urs.earthdata.nasa.gov 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`EOSDIS Earthdata` credentials (https://urs.earthdata.nasa.gov ) are required for download.
+Login using your `EOSDIS Earthdata` credentials or register for free at https://urs.earthdata.nasa.gov/users/new .
+	
+	**Warning**: Before downloading MODIS images, you must approve LP DAAC Data Pool clicking the following https://urs.earthdata.nasa.gov/approve_app?client_id=ijpRZvb9qeKCK5ctsn75Tg
+	
+* :guilabel:`User` |input_text| |registry_save|: enter the user name;
+* :guilabel:`Password` |input_text| |registry_save|: enter the password;
+* |checkbox| :guilabel:`remember`: remember user name and password in QGIS;
+	
+.. _search_area_MODIS:
+
+Search area
+^^^^^^^^^^^^^^^^^
+	
+Define the search area by entering the coordinates (longitude and latitude) of an ``Upper Left`` (UL) point and ``Lower Right`` (LR) point, or interactively drawing an area in the map.
+
+The definition of a search area is required before searching the images.
+
+* :guilabel:`UL X (Lon)` |input_number|: set the UL longitude;
+* :guilabel:`UL Y (Lat)` |input_number|: set the UL latitude;
+* :guilabel:`LR X (Lon)` |input_number|: set the LR longitude;
+* :guilabel:`LR Y (Lat)` |input_number|: set the LR latitude;
+* |radiobutton| :guilabel:`Show`: show or hide the search area drawn in the map;
+* |pointer|: define a search area by drawing a rectangle in the map; left click to set the UL point and right click to set the LR point; the area is displayed in the map;
+	
+.. _search_MODIS:
+
+Search
+^^^^^^^^^^^^^^^^^
+	
+Define the search settings such as date of acquisition, maximum cloud cover, or specify MODIS product.
+
+* :guilabel:`Products` |input_list|: set the MODIS products;
+* :guilabel:`Date from` |input_date|: set the starting date of acquisition;
+* :guilabel:`to` |input_date|: set the ending date of acquisition;
+* :guilabel:`Max cloud cover (%)` |input_number|: maximum cloud cover in the image (unused);
+* :guilabel:`Results` |input_number|: maximum number of images returned by the search;
+* :guilabel:`Filter` |input_text|: set a filter such as the Image ID of MODIS images; it is possible to enter multiple Image IDs separated by comma or semicolon; filtered images must be inside the search area;
+* :guilabel:`Find` |search_images|: find the images in the search area; results are displayed inside the table in :ref:`MODIS_images`; results are added to previous results;
+
+	**Tip**: Search results (and the number thereof) depend on the defined area extent and the range of dates. In order to get more results, perform multiple searches defining smaller area extent and narrow acquisition dates (from and to).
+	
+.. _MODIS_images:
+
+MODIS images
+^^^^^^^^^^^^^^^^^
+
+* |input_table| :guilabel:`Image list`: found images are displayed in this table, which includes the following fields;
+	* :guilabel:`ImageID`: the MODIS Image ID;
+	* :guilabel:`AcquisitionDate`: date of acquisition of MODIS image;
+	* :guilabel:`CloudCover`: percentage of cloud cover in the image;
+	* :guilabel:`ImageDisaplyID`: the MODIS Image ID;
+	* :guilabel:`DayNightFlag`: flag for acquisition during day or night;
+	* :guilabel:`min_lat`: minimum latitude of the image;
+	* :guilabel:`min_lon`: minimum longitude of the image;
+	* :guilabel:`max_lat`: maximum latitude of the image;
+	* :guilabel:`max_lon`: maximum longitude of the image;
+	* :guilabel:`Service`: download service of the image;
+	* :guilabel:`Preview`: URL of the image preview;
+	* :guilabel:`collection`: collection code of the image;
+	
+* |image_preview|: display preview of highlighted images in the map; preview is roughly georeferenced on the fly;
+* |remove|: remove highlighted images from the list;
+* |reset|: remove all images from the list;
+
+.. _MODIS_download:
+
+Download
+^^^^^^^^^^^^^^^^^
+
+Download  the MODIS images in the :ref:`MODIS_images`.
+During the download it is recommended not to interact with QGIS.
+
+* |checkbox| :guilabel:`Only if preview in Layers`: if checked, download only those images listed in :ref:`MODIS_images` which are also listed in the QGIS layer panel;
+* |checkbox| :guilabel:`Preprocess images`: if checked, bands are automatically converted after the download, according to the settings defined in :ref:`modis_tab`;
+* |checkbox| :guilabel:`Load bands in QGIS`: if checked, bands are loaded in QGIS after the download;
+* |export|: export the download links to a text file;
+* |run|: start the download process of all the images listed in :ref:`MODIS_images`;
 
 	
 .. _tools_tab:
@@ -742,6 +856,7 @@ Export signatures
 This tool allows for exporting the signatures highlighted in the :ref:`ROI_list`.
 
 * :guilabel:`Export as SCP file` |new_file|: create a new .scp file and export highlighted ROIs and spectral signatures as :guilabel:`SCP` file (* .scp);
+* :guilabel:`Export as shapefile` |new_file|: export highlighted ROIs (spectral signature data excluded) as a new shapefile (* .shp);
 * :guilabel:`Export as CSV file` |open_dir|: open a directory, and export highlighted spectral signatures as individual CSV files (* .csv) separated by semicolon ( ; );
 
 .. _Algorithm_band_weight_tab:
@@ -1002,8 +1117,8 @@ Once the input is selected, available bands are listed in the metadata table.
 Sentinel-2 conversion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* :guilabel:`Directory containing Sentinel-2 bands` |open_file|: open a directory containing Sentinel-2 bands; names of Sentinel-2 bands must end with the corresponding number; if the metadata file is included in this directory then :ref:`sentinel2_metadata` are automatically filled;
-* |checkbox| :guilabel:`Brightness temperature in Celsius`: if checked, convert brightness temperature to Celsius (if a Landsat thermal band is listed in :ref:`landsat_metadata`); if unchecked temperature is in Kelvin;
+* :guilabel:`Directory containing Sentinel-2 bands` |open_dir|: open a directory containing Sentinel-2 bands; names of Sentinel-2 bands must end with the corresponding number; if the metadata file is included in this directory then :ref:`sentinel2_metadata` are automatically filled;
+* :guilabel:`Select metadata file` |open_file| |optional|: select the metadata file which is a .xml file whose name contains ``MTD_MSIL1C``);
 * |checkbox| :guilabel:`Apply DOS1 atmospheric correction`: if checked, the :ref:`DOS1_correction` is applied to all the bands;
 * |checkbox| :guilabel:`Use NoData value (image has black border)` |input_number|: if checked, pixels having ``NoData`` value are not counted during conversion and the DOS1 calculation of DNmin; it is useful when image has a black border (usually pixel value = 0);
 * |checkbox| :guilabel:`Create Band set and use Band set tools`: if checked, the :guilabel:`Band set` is created after the conversion; also, the :guilabel:`Band set` is processed according to the tools checked in the :ref:`band_set_tab`;
@@ -1014,7 +1129,7 @@ Metadata
 ^^^^^^^^^^^^^^^^^
 
 All the bands found in the :guilabel:`Directory containing Sentinel-2 bands` are listed in the table :guilabel:`Metadata`.
-If the Sentinel-2 metadata file (a .xml file whose name contains ``MTD_SAFL1C``) is provided, then :guilabel:`Metadata` are automatically filled.
+If the Sentinel-2 metadata file (a .xml file whose name contains ``MTD_MSIL1C``) is provided, then :guilabel:`Metadata` are automatically filled.
 For information about :guilabel:`Metadata` fields read `this informative page <https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/data-formats>`_ .
 
 * :guilabel:`Satellite` |input_text|: satellite name (e.g. Sentinel-2A);
@@ -1078,6 +1193,53 @@ For information about :guilabel:`Metadata` fields visit `the ASTER page <https:/
 	* :guilabel:`PixelSize`: solar irradiance of band;
 
 .. _run_tool_4:
+
+Run
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* |run|: select an output directory and start the conversion process; only bands listed in the table :guilabel:`Metadata` are converted; converted bands are saved in the output directory with the prefix ``RT_`` and automatically loaded in QGIS;
+	
+.. _modis_tab:
+ 
+MODIS
+-----------
+
+.. figure:: _static/modis_tab.jpg
+	:align: center
+	:width: 500pt
+	
+	|modis_tool|  :guilabel:`MODIS`
+	
+This tab allows for the conversion of **MODIS** images to .tif format, and the reprojection to WGS 84.
+
+Once the input is selected, available bands are listed in the metadata table.
+
+.. _modis_conversion:
+
+MODIS conversion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* :guilabel:`Select file MODIS` |open_file|: select a MODIS image (file .hdf);
+* |checkbox| :guilabel:`Reproject to WGS 84`: if checked, reproject bands to WGS 84, required for use in :guilabel:`SCP`;
+* |checkbox| :guilabel:`Use NoData value (image has black border)` |input_number|: if checked, pixels having ``NoData`` value are not counted during conversion and the DOS1 calculation of DNmin; it is useful when image has a black border (usually pixel value = 0);
+* |checkbox| :guilabel:`Create Band set and use Band set tools`: if checked, the :guilabel:`Band set` is created after the conversion; also, the :guilabel:`Band set` is processed according to the tools checked in the :ref:`band_set_tab`;
+
+.. _modis_metadata:
+
+Metadata
+^^^^^^^^^^^^^^^^^
+
+All the bands found in the :guilabel:`Select file MODIS` are listed in the table :guilabel:`Metadata`.
+For information about :guilabel:`Metadata` fields visit `the MODIS page <https://lpdaac.usgs.gov/dataset_discovery/modis>`_ .
+
+* :guilabel:`ID` |input_text|: ID of the image;
+* |remove|: remove highlighted bands from the table :guilabel:`Metadata`;
+
+* |input_table| :guilabel:`Metadata`: table containing the following fields;
+	* :guilabel:`Band`: band name;
+	* :guilabel:`UnitConversionCoeff`: value for conversion;
+
+.. _run_tool_4_2:
 
 Run
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1160,6 +1322,34 @@ Run
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * |run|: choose the output destination and split selected raster; output bands are automatically loaded in QGIS;
+
+.. _stack_raster_tab:
+
+Stack raster bands
+-------------------------
+
+.. figure:: _static/stack_raster_tab.jpg
+	:align: center
+	:width: 500pt
+	
+	|stack_raster| :guilabel:`Stack raster bands`
+
+Stack raster bands into a single file.
+
+.. _raster_list_stack:
+
+Raster list
+^^^^^^^^^^^
+
+* |reload|: refresh layer list;
+* |select_all|: select all the rasters;
+
+.. _run_tool_6_1:
+
+Run
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* |run|: choose the output destination and stack selected rasters; output is automatically loaded in QGIS;
 
 .. _pca_tab:
 
@@ -1624,6 +1814,7 @@ In addition, the following variables related to :ref:`band_set_tab` the are avai
 * :guilabel:`"#NIR#"`: the band with the center wavelength closest to 0.85 :math:`\mu m`;
 
 Variables for output name are available:
+
 * :guilabel:`#BANDSET#`: the name of the first band in the :ref:`band_set_tab`;
 * :guilabel:`#DATE#`: the current date and time (e.g. 20161110_113846527764);
 
@@ -1673,7 +1864,7 @@ The following buttons are available:
 Index calculation
 ----------------------------
 
-:guilabel:`Index calculation` allows for entering a spectral index expression.
+:guilabel:`Index calculation` allows for entering a spectral index expression (see :ref:`spectral_indices_definition`).
 
 * :guilabel:`Index calculation` |input_list|: list of spectral indices:
 	* :guilabel:`NDVI`: if selected, the NDVI calculation is entered in the :guilabel:`Expression` ( ``(( "#NIR#" - "#RED#") / ( "#NIR#" + "#RED#") @ NDVI)`` );
@@ -1788,6 +1979,7 @@ It is possible to define a multiplicative rescaling factor and additive rescalin
 	* Landsat 5 TM;
 	* Landsat 4 TM;
 	* Landsat 1, 2, and 3 MSS;
+	* MODIS;
 	* Pleiades;
 	* QuickBird;
 	* RapidEye;
@@ -1870,10 +2062,12 @@ If the expression contains errors, the text is red.
 	* :ref:`edit_raster_tab`: edit raster values using a shapefile); (``edit_raster_using_shapefile;input_raster_path : '';input_vector_path : '';vector_field_name : '';constant_value : 0;expression :  'where(raster == 1, 2, raster)'``);
 	* :ref:`land_cover_change_tab`: calculate land cover change (``land_cover_change;reference_raster_path : '';new_raster_path : '';output_raster_path : ''``);
 	* :ref:`landsat_tab`: Landsat conversion (``landsat_conversion;input_dir : '';mtl_file_path : '';celsius_temperature : 0;apply_dos1 : 0;use_nodata : 1;nodata_value : 0;pansharpening : 0;create_bandset : 1;output_dir : ''``);
+	* :ref:`modis_tab`: MODIS conversion (``modis_conversion;input_raster_path : '';reproject_wgs84 : 1;use_nodata : 1;nodata_value : -999;create_bandset : 1;output_dir : ''``);
 	* :ref:`pca_tab`: Principal Component Analysis (``pca;use_number_of_components : 0, number_of_components : 2;use_nodata : 1;nodata_value : 0;output_dir : ''``);
 	* :ref:`reclassification_tab`: raster reclassification (``reclassification;input_raster_path : '';value_list : 'oldVal-newVal;oldVal-newVal';use_signature_list_code : 1;code_field : 'MC_ID';output_raster_path : ''``);
 	* :ref:`sentinel2_tab`: Sentinel-2 conversion (``sentinel_conversion;input_dir : '';mtd_safl1c_file_path : '';apply_dos1 : 0;use_nodata : 1;nodata_value : 0;create_bandset : 1;output_dir : ''``);
 	* :ref:`split_raster_tab`: split raster to single bands (``split_raster_bands;input_raster_path : '';output_dir : '';output_name_prefix : 'split'``);
+	* :ref:`stack_raster_tab`: stack rasters into a single file (``stack_raster_bands;input_raster_path : '';output_raster_path : ''``);
 	* :ref:`vector_to_raster_tab`: convert vector to raster (``vector_to_raster;vector_file_path : '';use_value_field : 1;vector_field_name : '';constant_value : 1;reference_raster_path : '';type_of_conversion : 'Center of pixels';output_raster_path : ''``);
 
 In addition, the following functions are available:

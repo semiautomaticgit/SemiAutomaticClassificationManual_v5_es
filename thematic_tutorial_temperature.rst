@@ -729,4 +729,4 @@ Other methods have been developed which can provide more accurate results, and t
 Other Tutorials
 ----------------------------------------------
 
-For other tutorials visit the blog `From GIS to Remote Sensing <http://fromgistors.blogspot.com/search/label/Tutorial>`_ .
+For other tutorials visit the blog `From GIS to Remote Sensing <https://fromgistors.blogspot.com/search/label/Tutorial>`_ .

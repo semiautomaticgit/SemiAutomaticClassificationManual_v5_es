@@ -9,9 +9,19 @@ Frequently Asked Questions
  <br />
 
 
+.. |export| image:: _static/semiautomaticclassificationplugin_export.png
+	:width: 20pt
+	
+.. |enter| image:: _static/semiautomaticclassificationplugin_enter.png
+	:width: 20pt
+
+.. |checkbox| image:: _static/checkbox.png
+	:width: 18pt
+
+
 If you have comments or questions please join the `Facebook group <https://www.facebook.com/groups/SemiAutomaticClassificationPlugin>`_ or the `Google+ Community <https://plus.google.com/communities/107833394986612468374>`_ .
 
-Before asking, please check the official site `From GIS to Remote Sensing <http://fromgistors.blogspot.com>`_ and the following Frequently Asked Questions.
+Before asking, please check the official site `From GIS to Remote Sensing <https://fromgistors.blogspot.com>`_ and the following Frequently Asked Questions.
 	
 .. contents::
     :depth: 2
@@ -248,14 +258,14 @@ How can I report an error?
 If you found an error of the Semi-Automatic Classification Plugin please follow these steps in order to collect the required information (log file):
 
 #. close QGIS if already open;
-#. open QGIS, open the Plugin tab :ref:`settings_debug_tab` and check the checkbox ``Records events in a log file`` ;
+#. open QGIS, open the Plugin tab :ref:`settings_debug_tab` and check the checkbox |checkbox| :guilabel:`Records events in a log file` ;
 
 .. figure:: _static/settings_debug_tab.jpg
 	:align: center
 	
 	:guilabel:`Debug`
 
-3. click the button ``Test dependencies`` in the tab :ref:`settings_debug_tab` ;
+3. click the button :guilabel:`Test dependencies` |enter| in the tab :ref:`settings_debug_tab` ;
 #. load the data in QGIS (or open a previously saved QGIS project) and repeat all the steps that cause the error in the Plugin;
 	* if the issue could be related to the image data, please use `this sample dataset <https://docs.google.com/uc?id=0BysUrKXWIDwBc1llME4yRmpjMGc&export=download>`_ ;
 #. if an error message appears (like the one in the following image), copy the whole content of the message in a text file;
@@ -265,7 +275,7 @@ If you found an error of the Semi-Automatic Classification Plugin please follow 
 	
 	:guilabel:`Error message`
 	
-6. open the tab :ref:`settings_debug_tab` and uncheck the checkbox ``Records events in a log file``, then click the button ``Export Log file`` and save the **log file** (which is a text file containing information about the Plugin processes);
+6. open the tab :ref:`settings_debug_tab` and uncheck the checkbox |checkbox| :guilabel:`Records events in a log file`, then click the button |export| and save the **log file** (which is a text file containing information about the Plugin processes);
 #. open the **log file** and copy the whole content of the file;
 #. join the Facebook `group <https://www.facebook.com/groups/661271663969035/>`_ or the Google+ `community <https://plus.google.com/communities/107833394986612468374>`_ , create a new post and copy the error message and the **log file** (or attach them).
 
@@ -433,7 +443,7 @@ Also, you can donate to this project at the following link https://fromgistors.b
 Free and valuable resources about remote sensing and GIS
 -----------------------------------------------------------------------------------------
 
-The following links are remote sensing and Landsat images:
+The following links are valuable resources:
 
 	* `The Landsat 8 Data Users Handbook by USGS <http://landsat.usgs.gov/documents/Landsat8DataUsersHandbook.pdf>`_;
 	* `The Landsat 7 Science Data Users Handbook by NASA <http://landsathandbook.gsfc.nasa.gov/pdfs/Landsat7_Handbook.pdf>`_;
@@ -454,7 +464,7 @@ Following an incomplete list of these resources:
 
 	* `French: Suivre l’impact des feux de forêts par imagerie satellite avec le plugin Qgis SCP <http://blog.martzluff.net/suivre-limpact-des-feux-de-forets-par-imagerie-satellite-avec-le-plugin-qgis-scp-semi-automatic-classification-plugin-exemple-de-lincendie-de-fin-mars-2015-en-ukraine-a-proximite-de-la/>`_;
 	* `German: 2015 Jakob Erfassung von Landnutzungsveränderungen mit FOSS Image Processing Tools <https://www.youtube.com/watch?v=vIsHFvLS5_Q>`_;
-	* `Italian: Classificazione e Mosaico di Varie Immagini Landsat <http://fromgistors.blogspot.com/2015/09/tutorial-classificazione-mosaico-landsat.html>`_;
+	* `Italian: Classificazione e Mosaico di Varie Immagini Landsat <https://fromgistors.blogspot.com/2015/09/tutorial-classificazione-mosaico-landsat.html>`_;
 	* `Korean: QGIS Semi-Automatic Classification Plugin <http://blog.daum.net/geoscience/715>`_;
 	* `Portuguese: Classificacao supervisionada de imagens Sentinel-2 com QGIS e SCP <https://www.youtube.com/watch?v=t5D6JT7adYY>`_;
 	* `Portuguese: Avaliação do erro de uma imagem de satélite usando o QGIS e o SCP <https://www.youtube.com/watch?v=k1yjcJPb1WI>`_;

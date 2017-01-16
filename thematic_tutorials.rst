@@ -17,11 +17,10 @@ Before these tutorials, it is recommended to read the :ref:`tutorials`.
 	thematic_tutorial_lcs.rst
 	thematic_tutorial_temperature.rst
 	
-Also, visit the blog `From GIS to Remote Sensing <http://fromgistors.blogspot.com/search/label/Tutorial>`_ for other tutorials such as:
+Also, visit the blog `From GIS to Remote Sensing <https://fromgistors.blogspot.com/search/label/Tutorial>`_ for other tutorials such as:
 
-* `Supervised Classification of Hyperspectral Data <http://fromgistors.blogspot.com/2014/10/supervised-classification-of-hyperspectral.html>`_;
-* `Monitoring Deforestation <http://fromgistors.blogspot.com/2014/09/monitoring-changes-in-amazon-rainforest.html>`_;
-* `Flood Monitoring <http://fromgistors.blogspot.com/2014/09/flood-monitoring-tutorial-using-semi.html>`_;
-* `Land Cover Classification of Cropland <http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-cropland.html>`_.
+* `Flood Monitoring Using The Semi-Automatic Classification Plugin <https://fromgistors.blogspot.com/2017/01/flood-monitoring.html>`_;
+* `Wildfire Monitoring Using The Semi-Automatic Classification Plugin <https://fromgistors.blogspot.com/2017/01/wildfire-monitoring.html>`_;
+* `From Image Download to NDVI Calculation in One Move: SCP Batch <https://fromgistors.blogspot.com/2016/11/from-image-download-to-ndvi-calculation.html>`_;
 
 For other unofficial tutorials, also in languages other than English, see :ref:`other_3`.

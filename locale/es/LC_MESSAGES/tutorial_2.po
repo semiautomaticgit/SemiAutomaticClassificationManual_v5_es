@@ -47,7 +47,7 @@ msgstr "Agua;"
 
 #: ../../tutorial_2.rst:227
 msgid "Built-up;"
-msgstr "Construcciones;"
+msgstr "Construido;"
 
 #: ../../tutorial_2.rst:228
 msgid "Vegetation;"
@@ -76,9 +76,9 @@ msgid ""
 " going to use the following Sentinel-2 bands (for more information read "
 ":ref:`Sentinel2_definition`):"
 msgstr ""
-"Vamos a **descargar una imagen Sentinel-2** Distribuida por Copernicus "
-"`Scientific Data Hub <https://scihub.copernicus.eu/>`_. En particular, vamos"
-" a usar las siguientes bandas de Sentinel-2 (para más información leer "
+"Vamos a **descargar una imagen Sentinel-2** Distribuida por `Copernicus "
+"Scientific Data Hub <https://scihub.copernicus.eu/>`_. En particular, vamos "
+"a usar las siguientes bandas de Sentinel-2 (para más información, leer "
 ":ref:`Sentinel2_definition`):"
 
 #: ../../tutorial_2.rst:247
@@ -95,31 +95,31 @@ msgstr "Banda 4 - Rojo;"
 
 #: ../../tutorial_2.rst:250
 msgid "Band 5 - Vegetation Red Edge;"
-msgstr "Band 5 - Límite Rojo de Vegetación;"
+msgstr "Banda 5 - Límite Rojo de Vegetación;"
 
 #: ../../tutorial_2.rst:251
 msgid "Band 6 - Vegetation Red Edge;"
-msgstr "Band 6 - Límite Rojo de Vegetación;"
+msgstr "Banda 6 - Límite Rojo de Vegetación;"
 
 #: ../../tutorial_2.rst:252
 msgid "Band 7 - Vegetation Red Edge;"
-msgstr "Band 7 - Límite Rojo de Vegetación;"
+msgstr "Banda 7 - Límite Rojo de Vegetación;"
 
 #: ../../tutorial_2.rst:253
 msgid "Band 8 - NIR;"
-msgstr "Band 8 - NIR;"
+msgstr "Banda 8 - NIR (Infrarrojo Cercano);"
 
 #: ../../tutorial_2.rst:254
 msgid "Band 8A - Vegetation Red Edge;"
-msgstr "Band 8A - Límite Rojo de Vegetación;"
+msgstr "Banda 8A - Límite Rojo de Vegetación;"
 
 #: ../../tutorial_2.rst:255
 msgid "Band 11 - SWIR;"
-msgstr "Band 11 - SWIR;"
+msgstr "Banda 11 - SWIR (Infrarrojo de onda corta);"
 
 #: ../../tutorial_2.rst:256
 msgid "Band 12 - SWIR;"
-msgstr "Band 12 - SWIR;"
+msgstr "Band 12 - SWIR  (Infrarrojo de onda corta);"
 
 #: ../../tutorial_2.rst:258
 msgid ""
@@ -1134,5 +1134,5 @@ msgstr ""
 "**Consejo**: descargar este archivo zip "
 "<https://docs.google.com/uc?id=0BysUrKXWIDwBZHF6dENlZ0g1Y0k>`_ conteniendo "
 "un shapefile de gránulos de Sentinel-2 para identificar la zona. Cargar este"
-" archivo shapefile en QGIS, selecionar los gránulos en su área de búsqueda y"
-" abrir la tabla de atributos para ver el nombre de la zona."
+" archivo shape en QGIS, seleccionar los gránulos en su área de búsqueda y "
+"abrir la tabla de atributos para ver el nombre de la zona.   "

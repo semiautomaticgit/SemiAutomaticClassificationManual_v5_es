@@ -252,7 +252,7 @@ ROIs are displayed in QGIS as vector file (in order to prevent data loss, you sh
 * |bandcalc|: open the  :ref:`band_calc_tab`;
 * |settings|: open the  :ref:`settings_tab`;
 * |guide|: open the online user manual in a web browser;
-* |help|: open the `Online help <http://fromgistors.blogspot.com/p/online-help.html>`_ in a web browser; also, a `Facebook group <https://www.facebook.com/groups/SemiAutomaticClassificationPlugin/>`_ and a `Google+ Community <https://plus.google.com/communities/107833394986612468374>`_ are available for sharing information and asking for help about :guilabel:`SCP`;
+* |help|: open the `Online help <https://fromgistors.blogspot.com/p/online-help.html>`_ in a web browser; also, a `Facebook group <https://www.facebook.com/groups/SemiAutomaticClassificationPlugin/>`_ and a `Google+ Community <https://plus.google.com/communities/107833394986612468374>`_ are available for sharing information and asking for help about :guilabel:`SCP`;
 	
 .. _SCP_news:
  
