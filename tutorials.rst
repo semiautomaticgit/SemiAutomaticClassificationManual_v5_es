@@ -16,6 +16,7 @@ It is assumed that you have a basic knowledge of QGIS (you can find a guide to Q
 	
 	tutorial_1.rst
 	tutorial_2.rst
+	webinar_nasa_arset.rst
 	
 
 After these tutorials, please check the :ref:`thematic_tutorials` .

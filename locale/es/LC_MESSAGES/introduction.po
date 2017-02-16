@@ -1,5 +1,6 @@
 # Translators:
 # Igor F. Davalos Rojas <idavalosr@gmail.com>, 2016
+# Rafael Rodriguez-Altamiranda <rafaaltamiranda@yahoo.com>, 2016
 # Daniel Orellana (Temporalista) <temporalista@gmail.com>, 2016
 msgid ""
 msgstr ""
@@ -30,14 +31,13 @@ msgid ""
 "preprocessing, the postprocessing, and the raster calculation (please see "
 ":ref:`other_0`)."
 msgstr ""
-"Desarrollado por `Luca Congedo "
-"<http://www.researchgate.net/profile/Luca_Congedo>`_, el **Semi-Automatic "
-"Classification Plugin** (:guilabel:`SCP`) es un complemento gratis de código"
-" abierto para `QGIS <http://www.qgis.org>`_ que permite la clasificación "
-"semi-automática (también conocida como clasificación supervisada) de "
-"imágenes de sensores remotos. Proporciona muchas herramientas para la "
-"descarga de imágenes gratis, el pre-procesamiento y el cálculo ráster (por "
-"favor mira :ref:`other_0`)."
+"El complemento **Semi-Automatic Classification Plugin** (SCP siglas en "
+"inglés) es un repositorio de código abierto y libre acceso para QGIS "
+"<http://www.qgis.org> que permite la clasificación semi-automática de "
+"imágenes de sensores remotos (también conocida como clasificación "
+"supervisada). Proporciona adicionalmente otras herramientas como descarga de"
+" imágenes satelitales disponibles sin costo, el pre-procesamiento de "
+"imágenes y calculadora ráster, entre otras."
 
 #: ../../introduction.rst:17
 msgid ""
@@ -119,14 +119,6 @@ msgstr ""
 msgid "For more information and tutorials visit the official site"
 msgstr "Para mayor información y tutoriales visita el sitio oficial"
 
-#: ../../introduction.rst:41
-msgid ""
-"|fromGIStoRS| `From GIS to Remote Sensing "
-"<http://fromgistors.blogspot.com>`_"
-msgstr ""
-"|fromGIStoRS| `From GIS to Remote Sensing "
-"<http://fromgistors.blogspot.com>`_"
-
 #: ../../introduction.rst:43 ../../introduction.rst:49
 #: ../../introduction.rst:60 ../../introduction.rst:66
 msgid "|br|"
@@ -187,3 +179,16 @@ msgstr "**Traductores:**"
 #: ../../introduction.rst:64
 msgid "Language: Author"
 msgstr "Español: Igor Francisco Dávalos Rojas"
+
+#: ../../introduction.rst:41
+msgid ""
+"|fromGIStoRS| `From GIS to Remote Sensing "
+"<https://fromgistors.blogspot.com>`_"
+msgstr ""
+
+#~ msgid ""
+#~ "|fromGIStoRS| `From GIS to Remote Sensing "
+#~ "<http://fromgistors.blogspot.com>`_"
+#~ msgstr ""
+#~ "|fromGIStoRS| `From GIS to Remote Sensing "
+#~ "<http://fromgistors.blogspot.com>`_"
